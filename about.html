@@ -58,10 +58,10 @@
 
       #links {
         display: flex;
-        justify-content: center; /* This will ensure there's space around each card */
+        justify-content: center;
         margin-top: 20px;
         width: 100%;
-        max-width: 100%; /* Adjusted to allow cards to be wider */
+        max-width: 100%;
         padding: 0 10px;
       }
 
@@ -69,17 +69,17 @@
         background-color: #efeff3;
         border: 1px solid #ddd;
         border-radius: 8px;
-        width: 25%; /* Adjusted to make cards wider */
+        width: 25%;
         padding: 20px;
         cursor: pointer;
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Updated transition for smoother effect */
         text-align: center;
         margin: 0 1%;
       }
 
       .link-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: scale(1.05); /* Updated transform property */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow property */
       }
 
       .link-card h2 {
@@ -94,7 +94,6 @@
         font-size: 2em;
         margin-bottom: 10px;
         display: block;
-        text-align: center;
       }
     </style>
   </head>
