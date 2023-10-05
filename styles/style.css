@@ -60,3 +60,7 @@ footer p {
   color: #fff;
   margin-top: 10px;
 }
+
+footer #social-icons i {
+  color: #fff; /* This sets the color to white */
+}
