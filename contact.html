@@ -15,6 +15,175 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inconsolata", monospace;
+        background-color: #faf3dd;
+      }
+
+      /* style for navbar */
+      header nav {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #68b0ab;
+        padding: 10px;
+      }
+
+      header nav #logo img {
+        height: 50px;
+        padding-left: 50px;
+      }
+
+      header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding-right: 50px;
+      }
+
+      header nav ul li {
+        margin: 0 10px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        font-family: "Inconsolata", monospace;
+        color: #1e1e1e;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-weight: bold; /* Changed from bolder */
+        font-size: large;
+      }
+
+      header nav ul li a:hover {
+        color: #fff;
+      }
+
+      /* style for footer */
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #1e1e1e;
+        padding: 15px;
+        width: 100%;
+        bottom: 0;
+        height: 100px;
+      }
+
+      footer #social-icons i {
+        color: #fff;
+        margin: 0px 7px;
+        font-size: 25px;
+      }
+
+      footer p {
+        color: #fff;
+        font-size: smaller;
+      }
+
+      /* style for about us page */
+      #links {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .link-card {
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 40%;
+        padding: 20px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .link-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .link-card h2 {
+        margin-top: 0;
+      }
+
+      .link-card p {
+        margin: 10px 0 0;
+      }
+
+      /* Contact Us */
+      #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 150px;
+        line-height: 1.6;
+      }
+
+      .contact-image img {
+        width: 500px;
+        border-radius: 20px 20px 20px 20px;
+        margin-right: 150px; /* Added margin to create space */
+      }
+
+      .contact-form {
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .contact-form h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .contact-form p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 20px; /* Adjust the height as needed */
+        border-radius: 10px; /* Adds curved edges */
+        padding: 10px; /* Adds padding for better spacing */
+      }
+
+      .contact-form textarea {
+        height: 150px; /* Adjust the height of the textarea as needed */
+        border: 2px solid #1e1e1e; /* Added border property */
+      }
+
+      .contact-form button {
+        background-color: #68b0ab;
+        color: white;
+        border: #1e1e1e;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        border:2px solid #1e1e1e;
+        border-radius: 10px 10px 10px 10px;
+      }
+      .contact-form button:hover {
+      transform: scale(1.1);
+      }
+      
+
+      #errorMessage {
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -35,11 +204,6 @@
       </nav>
     </header>
 
-
-
-
-
-
     <main>
       <section id="contact">
         <div class="contact-image">
@@ -47,28 +211,21 @@
         </div>
         <div class="contact-form">
           <h2>Get in Touch</h2>
-          <p>Feel free to reach out to us!</p>
+          <p>
+            Have questions, suggestions, or just want to say hello? I would love
+            to hear from you! Fill out the form below and I'll get back to you
+            as soon as possible. Feel free to reach out!
+          </p>
           <form id="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required /><br />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required /><br />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea><br />
+            <input type="text" id="name" placeholder="Name" name="name" required /><br />
+            <input type="email" id="email" placeholder="Email" name="email" required /><br />
+            <textarea id="message" placeholder="Message" name="message" required></textarea><br />
             <button type="submit">Submit</button>
           </form>
-          <div id="errorMessage" style="color: red;"></div>
+          <div id="errorMessage" style="color: red"></div>
         </div>
       </section>
     </main>
-
-
-
-
-
-
-
-
 
     <footer>
       <div id="social-icons">
@@ -86,25 +243,27 @@
     </footer>
 
     <script>
-      document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-        var errorMessage = document.getElementById('errorMessage');
-      
-        if (!name || !email || !message) {
-          errorMessage.textContent = 'All fields are required.';
-          return;
-        }
-      
-        errorMessage.textContent = '';
-      
-        // At this point, the form is valid. You can send the data using a service like Formspree.
-        // You'll need to set up your Formspree endpoint in the 'action' attribute of the form.
-      
-        document.getElementById('contactForm').reset(); // Reset the form after submission
-      });
-      </script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          var errorMessage = document.getElementById("errorMessage");
+
+          if (!name || !email || !message) {
+            errorMessage.textContent = "All fields are required.";
+            return;
+          }
+
+          errorMessage.textContent = "";
+
+          // At this point, the form is valid. You can send the data using a service like Formspree.
+          // You'll need to set up your Formspree endpoint in the 'action' attribute of the form.
+
+          document.getElementById("contactForm").reset(); // Reset the form after submission
+        });
+    </script>
   </body>
 </html>
