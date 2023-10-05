@@ -15,14 +15,96 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Internal CSS for About Me Page */
+
+      #about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      #profile-pic {
+        border-radius: 10px;
+        width: 65%;
+        height: 450px;
+        margin-bottom: -50px;
+        z-index: 1;
+        position: relative;
+        margin-top: 50px;
+      }
+
+      #intro-card {
+        background-color: #68b0ab;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 500px;
+        padding: 20px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+      }
+
+      #detail {
+        text-align: center;
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+      }
+
+      #links {
+        display: flex;
+        justify-content: center; /* This will ensure there's space around each card */
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%; /* Adjusted to allow cards to be wider */
+        padding: 0 10px;
+      }
+
+      .link-card {
+        background-color: #efeff3;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 25%; /* Adjusted to make cards wider */
+        padding: 20px;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        margin: 0 1%;
+      }
+
+      .link-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .link-card h2 {
+        margin-top: 0;
+      }
+
+      .link-card p {
+        margin: 10px 0 0;
+      }
+
+      .link-card i.icon {
+        font-size: 2em;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
         <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
+          <a href="index.html">
+            <img src="./assets/chimis_den_logo.png" alt="Your Logo" />
+          </a>
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -36,20 +118,30 @@
     </header>
 
     <div id="about-section">
-      <div id="intro">
-        <img src="./assets/about me pic.jpg" alt="Your Name" />
-        <h1>Your Name</h1>
-        <p>
+      <img src="./assets/about me pic.jpg" alt="Your Name" id="profile-pic" />
+      <div id="intro-card">
+        <h1>
           Hello! I'm Your Name, a passionate blogger with a love for sharing my
           experiences and learnings...
+        </h1>
+      </div>
+      <div id="detail">
+        <p>
+          More details about yourself, your journey, and what readers can expect
+          to find on your blog...
         </p>
       </div>
       <div id="links">
-        <div class="link-card" onclick="location.href='faq.html'">
+        <div class="link-card faq-card" onclick="location.href='faq.html'">
+          <i class="fas fa-question-circle icon"></i>
           <h2>Frequently Asked Questions</h2>
           <p>Have questions? Find answers to commonly asked questions here.</p>
         </div>
-        <div class="link-card" onclick="location.href='testimonials.html'">
+        <div
+          class="link-card testimonial-card"
+          onclick="location.href='testimonials.html'"
+        >
+          <i class="fas fa-comment-dots icon"></i>
           <h2>Testimonials</h2>
           <p>See what people are saying about my blog.</p>
         </div>
@@ -58,17 +150,19 @@
 
     <footer>
       <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:your-email@gmail.com" target="_blank"
-          ><i class="fas fa-envelope"></i
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your-email@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i
         ></a>
       </div>
       <p>Chimi Denkar @2023</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
