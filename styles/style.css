@@ -4,6 +4,7 @@ body {
   font-family: "Inconsolata", monospace;
 }
 
+/* style for navbar */
 header nav {
   position: sticky;
   top: 0;
@@ -46,6 +47,7 @@ header nav ul li a:hover {
   color: #fff;
 }
 
+/* style for footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -63,13 +65,14 @@ footer #social-icons i {
   color: #fff;
   margin: 0px 7px;
   font-size: 25px;
-  /* Increased font size */
 }
 
 footer p {
   color: #fff;
-  font-size: smaller; /* Decreased font size */
+  font-size: smaller;
 }
+
+/* style for about us page */
 #links {
   display: flex;
   justify-content: space-around;
