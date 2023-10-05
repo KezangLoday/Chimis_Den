@@ -45,7 +45,7 @@ header nav ul li a:hover {
 footer {
   text-align: center;
   background-color: #1e1e1e;
-  padding: 10px;
+  padding: 15px;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -56,11 +56,12 @@ footer #social-icons img {
   margin: 0 5px;
 }
 
+footer #social-icons i {
+  color: #fff; /* This sets the color to white */
+  margin-right: 10px; /* Adjust as necessary to add space */
+}
+
 footer p {
   color: #fff;
   margin-top: 10px;
-}
-
-footer #social-icons i {
-  color: #fff; /* This sets the color to white */
 }
