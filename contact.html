@@ -84,5 +84,27 @@
       </div>
       <p>Chimi Denkar @2023</p>
     </footer>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        var errorMessage = document.getElementById('errorMessage');
+      
+        if (!name || !email || !message) {
+          errorMessage.textContent = 'All fields are required.';
+          return;
+        }
+      
+        errorMessage.textContent = '';
+      
+        // At this point, the form is valid. You can send the data using a service like Formspree.
+        // You'll need to set up your Formspree endpoint in the 'action' attribute of the form.
+      
+        document.getElementById('contactForm').reset(); // Reset the form after submission
+      });
+      </script>
   </body>
 </html>
