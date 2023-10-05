@@ -8,12 +8,12 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #68b0ab;
   padding: 10px;
 }
 
 header nav #logo img {
-  height: 50px; /* Adjust as necessary */
+  height: 50px;
 }
 
 header nav ul {
