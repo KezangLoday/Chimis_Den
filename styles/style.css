@@ -105,22 +105,19 @@ footer p {
 /* Contact Us */
 #contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 50px 150px;
 }
 
 .contact-image img {
-  max-width: 100%;
-  border-radius: 20px 0 0 20px;
+  width: 500px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .contact-form {
   max-width: 400px;
   width: 100%;
-  background-color: #f9f9f9;
-  border-radius: 0 20px 20px 0;
-  padding: 20px;
 }
 
 .contact-form h2 {
@@ -148,6 +145,8 @@ footer p {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+
 }
 
 #errorMessage {
