@@ -52,16 +52,17 @@ footer {
 }
 
 footer #social-icons img {
-  height: 30px; /* Adjust as necessary */
-  margin: 0 5px;
+  height: 30px;
+  margin: 0 10px;
 }
 
 footer #social-icons i {
-  color: #fff; /* This sets the color to white */
-  margin-right: 10px; /* Adjust as necessary to add space */
+  color: #fff;
+  margin-right: 10px;
 }
 
 footer p {
   color: #fff;
   margin-top: 10px;
+  margin-bottom: -5px;
 }
