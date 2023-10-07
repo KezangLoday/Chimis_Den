@@ -2,191 +2,105 @@
 <html>
 
 <head>
-    <title>My Daily Reflections</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+    <title>Chimi's Den</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+<style>
+    body{
+        background-color: #faf3dd;
+  
             margin: 0;
             padding: 0;
         }
-
-
+    
         .container {
-            max-width: 300px;
-            height: fit-content;
-            padding: 2rem;
-            background-color: transparent;
-            /* Set the container background to transparent */
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(15, 15, 15, 0.1);
-            margin-left: 3rem;
-            margin-top: 0;
-            font-family: 'Inconsolata', monospace;
-            /* font-family: 'Roboto', sans-serif; */
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
-        .entry {
-
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            /* You can apply a border-radius to each entry if desired */
-            padding: 1rem;
-            /* Add some padding to each entry */
-            /* font-family: 'Roboto', sans-serif; */
-            color: #e4af4c;
-
-        }
-
-
-        .top-sec {
-            background-image: url("girl.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            width: 100%;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-
-
-        }
-
         h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            color: #333;
         }
-
         h2 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
+            color: #333;
+            margin-top: 20px;
         }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.4;
+        p,ol,ul {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
         }
-
-        .entry:last-child {
-            border-bottom: none;
-        }
-
-        .infinite {
-            text-size-adjust: 23px;
-        }
-
-        .card {
-            width: 100vh;
-            height: fit-content;
-            background-color: rgb(255, 255, 255);
-            /* Set the background color */
-            border: 1px solid #cccccc;
-            /* Add a border for better visibility */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            /* Add a box shadow with increased opacity */
-            border-radius: 30px;
-            margin-top: -6rem;
-            margin-left: 32rem;
-        }
-
-        .card p {
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-
-        .card img {
-            margin-top: -3rem;
-            height: fit-content;
-            width: fit-content;
-        }
-
-        .head {
-            color: #4ce4cb;
-            /* font-family: 'Roboto', sans-serif; */
-            text-align: center;
-        }
-
-        .inspire {
-            width: 50%;
-            height: 50vh;
-            background-color: rgb(143, 205, 221);
-            margin-top: -2rem;
-        }
-
-        .card-content {
-            margin-top: -5rem;
-            margin-left: 2rem;
-        }
-
-        .hidden-content {
-            display: none;
-        }
-
-        .show-hide-toggle {
-            display: none;
-        }
-
-        .show-hide-toggle+label {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-
-        .show-hide-toggle:checked+label+.hidden-content {
-            display: block;
-        }
-    </style>
+</style>
 </head>
-
 <body>
 
-    <div class="top-sec">
+    <header>
+        <nav>
+          <div id="logo">
+            <a href="index.html"
+              ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+        </nav>
+      </header>
+       <h1 style="margin-top: 100px;text-align: center; font-size: 4rem;">Gratitude</h1>
+       <div class="container">
+        <h2>Understanding Gratitude:</h2>
+        <p>Gratitude is more than just saying "thank you" when someone does something kind for us. It's a mindset, an attitude, and a way of life. At its core, gratitude is about recognizing and appreciating the good things, both big and small, that surround us every day. It's about shifting our focus from what we lack to what we have.</p>
 
-        <div class="container">
-            <div class="entry">
-                <h2 class="infinite">INFINITE LOVE & GRATITUDE</h2>
-                <h4>Your are worthy of a heathy, balanced, and purposeful life.</h3>
-                    <p>
-                        In the journey of life, challenges and obstacles may come your way, but remember that the future
-                        belongs to those who believe in the beauty of their dreams. Every dream is a seed of potential,
-                        waiting to be nurtured with determination, hard work, and unwavering faith.
-                    </p>
-            </div>
+        <h2>The Science of Gratitude:</h2>
+        <p>Numerous studies have shown that practicing gratitude can have a profound impact on our mental, emotional, and physical well-being. When we express gratitude, our brains release dopamine and serotonin, often referred to as the "feel-good" neurotransmitters. This can lead to increased happiness, reduced stress, and improved overall mental health.</p>
 
-        </div>
+        <h2>Benefits of Practicing Gratitude:</h2>
+        <ul>
+            <li><strong>Improved Mental Health:</strong> Gratitude helps combat negative emotions like envy, resentment, and regret. It fosters a positive mindset and reduces symptoms of depression and anxiety.</li>
+            <li><strong>Enhanced Relationships:</strong> Expressing gratitude can strengthen relationships by making others feel valued and appreciated. It fosters a sense of connection and reciprocity.</li>
+            <li><strong>Increased Resilience:</strong> Gratitude can help us cope with difficult times. When we focus on what we're thankful for, we develop resilience in the face of adversity.</li>
+            <li><strong>Better Physical Health:</strong> Grateful individuals tend to engage in healthier behaviors like regular exercise and balanced diets. They also report better sleep patterns.</li>
+        </ul>
 
-        <!-- Repeat the .entry structure for each journal entry -->
+        <h2>How to Practice Gratitude in Your Life:</h2>
+        <ol>
+            <li><strong>Keep a Gratitude Journal:</strong> Write down three things you're grateful for each day. This simple practice can help you shift your focus towards positivity.</li>
+            <li><strong>Express Your Gratitude:</strong> Don't hesitate to say "thank you" to those who have positively impacted your life. Genuine appreciation can strengthen bonds and make you and others feel happier.</li>
+            <li><strong>Meditation and Mindfulness:</strong> Incorporate gratitude into your meditation or mindfulness practice. Take a few moments each day to reflect on the things you're thankful for.</li>
+            <li><strong>Count Your Blessings:</strong> Regularly remind yourself of the good things in your life, from the basics like food and shelter to the more profound, like love and friendship.</li>
+        </ol>
     </div>
-    <div class="card">
-        <img src="remain.png" />
-        <div class="card-content">
-            <h1 class="head">My Daily Remainder</h1>
-            <p>Embrace the challenges as opportunities for growth and learning. When you encounter setbacks, view them
-                as
-                stepping stones toward your ultimate destination. Keep your vision clear, your heart open, and your
-                spirit
-                resilient.</p>
-
-            <input type="checkbox" id="show-hide" class="show-hide-toggle">
-            <label for="show-hide">Show More</label>
-
-            <div class="hidden-content">
-                <p>Believe in yourself and your abilities. You possess the inner strength and resilience to overcome any
-                    adversity. Your dreams are unique to you, and they hold the power to inspire not only your own life
-                    but also the lives of others.</p>
-            </div>
-
+      <footer>
+        <div id="social-icons">
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:your-email@gmail.com" target="_blank"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
-
-    </div>
+        <p>Chimi Denkar @2023</p>
+      </footer>
 
 
 </html>
