@@ -61,6 +61,8 @@ footer {
   width: 100%;
   bottom: 0;
   height: 100px;
+  position: relative;
+
 }
 
 footer #social-icons i {
@@ -68,6 +70,7 @@ footer #social-icons i {
   margin: 0px 7px;
   font-size: 25px;
   text-decoration: none;
+  
 }
 
 footer p {

@@ -79,6 +79,45 @@
     width : 80vw;
     height: 100vh;
   }
+  #links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .link-card {
+    background-color: #efeff3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Updated transition for smoother effect */
+    text-align: center;
+    margin: 1% 2%;
+  }
+
+  .link-card:hover {
+    transform: scale(1.05); /* Updated transform property */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow property */
+  }
+
+  .link-card h2 {
+    margin-top: 0;
+  }
+
+  .link-card p {
+    margin: 10px 0 0;
+  }
+
+  .link-card i.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+  }
     </style>
   </head>
   <body>
@@ -113,7 +152,36 @@
       </div>
    
       <div class="image-box">
-        <img src="/assets/portfolio.jpg" alt="Portfolio Image" />
+
+        <h1 >Crafting Competence: My Skills Portfolio</h1>
+
+
+        <div id="links">
+          <div class="link-card faq-card">
+            <i class="fas fa-question-circle icon"></i>
+            <h2>Frequently Asked Questions</h2>
+            <p>Have questions? Find answers to commonly asked questions here.</p>
+          </div>
+          <div
+            class="link-card testimonial-card"          >
+            <i class="fas fa-comment-dots icon"></i>
+            <h2>Testimonials</h2>
+            <p>See what people are saying about my blog.</p>
+          </div>
+        </div>
+        <div id="links">
+          <div class="link-card faq-card">
+            <i class="fas fa-question-circle icon"></i>
+            <h2>Frequently Asked Questions</h2>
+            <p>Have questions? Find answers to commonly asked questions here.</p>
+          </div>
+          <div
+            class="link-card testimonial-card"          >
+            <i class="fas fa-comment-dots icon"></i>
+            <h2>Testimonials</h2>
+            <p>See what people are saying about my blog.</p>
+          </div>
+        </div>
       </div>
     </div>
 
