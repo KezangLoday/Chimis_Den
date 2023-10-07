@@ -1,153 +1,243 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <title>Selective Potential</title>
+    <title>Chimi's Den</title>
     <style>
-        body {
-            font-family: sans-serif;
-        }
+      body {
+        font-family: sans-serif;
+        background-color: #faf3dd;
+      }
+      .gratitude {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(./assets/gratitude.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: ease-in-out 0.5s;
+      }
+      .gratitude > p {
+        font-size: 6rem;
+        font-weight: bold;
+        color: #faf3dd;
+      }
+      .gratitude:hover {
+        opacity: 0.9;
+      }
+      .gratitude > button {
+        height: 50px;
 
-        header {
-            text-align: center;
-        }
+        font-size: 1.25rem;
+        border-radius: 10px;
+        border-color: black;
+        background-color: #68b0ab;
 
-        .first-row {
-            display: flex;
-            flex-direction: row;
-            margin-left: 15rem;
-        }
+        transition: ease-in-out 0.3s;
+      }
+      .gratitude > button > a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+     
+      .gratitude > button:hover {
+        border-color: #fff;
+        background-color: #afafaf;
+        color: black;
 
-        .second-row {
-            display: flex;
-            flex-direction: row;
-            margin-left: 15rem;
-            margin-top: 4rem;
-        }
+      }
 
-        .one {
-            margin-left: 4rem;
-            width: 24rem;
-            background-color: #fff;
-            /* Background color for the card */
-            padding: 1rem;
-            /* Padding around the card content */
+      header {
+        text-align: center;
+      }
 
-            border-radius: 8px;
-            /* Rounded corners for the card */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Box shadow for the card */
-        }
+      .row {
+        display: flex;
+        flex-direction: row;
+        margin-left: 15rem;
+        margin-bottom: 4rem;
+        column-gap: 2rem;
+      }
+      .one {
+        /* margin-left: 4rem; */
+        width: 20rem;
+        background-color: #68b0ab;
+        color: #f1f1f1;
+        /* Background color for the card */
+        padding: 1rem;
+        /* Padding around the card content */
 
-        img {
-            height: 27rem;
-            width: 24rem;
-            border-radius: 12px 12px 0 0;
+        border-radius: 8px;
 
-        }
+        /* Rounded corners for the card */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Box shadow for the card */
+      }
 
-        h1 {
-            font-size: 2rem;
-        }
+      .one > img {
+        height: 15rem;
+        width: 20rem;
+        border-radius: 12px 12px 0 0;
+        object-fit: cover;
+        background-position: center;
+      }
+      .one > p {
+        font-weight: 100;
+      }
 
-        main {
-            width: 80%;
-            margin: 0 auto;
-        }
+      h1 {
+        font-size: 2rem;
+      }
 
-        section {
-            margin-bottom: 2rem;
-        }
+      main {
+        width: 80%;
+        margin: 0 auto;
+      }
 
-        h2 {
-            font-size: 1.5rem;
-        }
+      section {
+        margin-bottom: 2rem;
+      }
 
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-        }
-       
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 2rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Selective Potential</h1>
+      <nav>
+        <div id="logo">
+          <a href="index.html"
+            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </nav>
     </header>
-    <div class="wrap">
-        <div class="first-row">
-            <div class="one">
-                <img src="blog.jpg" />
-                <div class="content">
-                    <p>October 3, 2023</p>
-                    <h2>A Keweenaw Visit</h2>
-                    <p>If you’re looking for a fun, jam-packed few days in the Keweenaw… I’ve got you! Read on for
-                        places to
-                        eat and drink, some activities to do, hikes to take, and a fun mine tour that dives into the
-                        history
-                        of the copper boom. Thank you to Visit Keweenaw for collaborating with me on this trip!</p>
-
-                </div>
-
-            </div>
-            <div class="one">
-                <img src="blog.jpg" />
-                <p>October 3, 2023</p>
-                <h2>A Keweenaw Visit</h2>
-                <p>If you’re looking for a fun, jam-packed few days in the Keweenaw… I’ve got you! Read on for places to
-                    eat and drink, some activities to do, hikes to take, and a fun mine tour that dives into the history
-                    of the copper boom. Thank you to Visit Keweenaw for collaborating with me on this trip!</p>
-
-            </div>
-            <div class="one">
-                <img src="blog.jpg" />
-                <p>October 3, 2023</p>
-                <h2>A Keweenaw Visit</h2>
-                <p>If you’re looking for a fun, jam-packed few days in the Keweenaw… I’ve got you! Read on for places to
-                    eat and drink, some activities to do, hikes to take, and a fun mine tour that dives into the history
-                    of the copper boom. Thank you to Visit Keweenaw for collaborating with me on this trip!</p>
-
-            </div>
-
-        </div>
-        <div class="second-row">
-            <div class="one">
-                <img src="blog.jpg" />
-                <p>October 3, 2023</p>
-                <h2>A Keweenaw Visit</h2>
-                <p>If you’re looking for a fun, jam-packed few days in the Keweenaw… I’ve got you! Read on for places to
-                    eat and drink, some activities to do, hikes to take, and a fun mine tour that dives into the history
-                    of the copper boom. Thank you to Visit Keweenaw for collaborating with me on this trip!</p>
-
-            </div>
-            <div class="one">
-                <img src="blog.jpg" />
-                <p>October 3, 2023</p>
-                <h2>A Keweenaw Visit</h2>
-                <p>If you’re looking for a fun, jam-packed few days in the Keweenaw… I’ve got you! Read on for places to
-                    eat and drink, some activities to do, hikes to take, and a fun mine tour that dives into the history
-                    of the copper boom. Thank you to Visit Keweenaw for collaborating with me on this trip!</p>
-
-            </div>
-            <div class="one">
-                <img src="blog.jpg" />
-                <p>October 3, 2023</p>
-                <h2>A Keweenaw Visit</h2>
-                <p>If you’re looking for a fun, jam-packed few days in the Keweenaw… I’ve got you! Read on for places to
-                    eat and drink, some activities to do, hikes to take, and a fun mine tour that dives into the history
-                    of the copper boom. Thank you to Visit Keweenaw for collaborating with me on this trip!</p>
-
-            </div>
-
-        </div>
-        <div class="third-row">
-
-        </div>
-
+    <div class="gratitude">
+      <p style="text-align: center">Feel the Grace of God</p>
+      <button><a href="./gratitude.html"> Explore Gratitude </a></button>
     </div>
-
-
-</body>
-
+    <h1 style="text-align: center; margin-top: 50px; font-size: 3rem">
+      My Blogs
+    </h1>
+    <div class="wrap">
+      <div class="row">
+        <div class="one">
+          <img src="./assets/blog.jpg" />
+          <p>October 3, 2023</p>
+          <h2>A Keweenaw Visit</h2>
+          <p>
+            If you're looking for a fun, jam-packed few days in the Keweenaw…
+            I've got you! Read on for places to eat and drink, some activities
+            to do, hikes to take, and a fun mine tour that dives into the
+            history of the copper boom. Thank you to Visit Keweenaw for
+            collaborating with me on this trip!
+          </p>
+        </div>
+        <div class="one">
+          <img src="./assets/blog.jpg" />
+          <p>October 3, 2023</p>
+          <h2>A Keweenaw Visit</h2>
+          <p>
+            If you’re looking for a fun, jam-packed few days in the Keweenaw…
+            I’ve got you! Read on for places to eat and drink, some activities
+            to do, hikes to take, and a fun mine tour that dives into the
+            history of the copper boom. Thank you to Visit Keweenaw for
+            collaborating with me on this trip!
+          </p>
+        </div>
+        <div class="one">
+          <img src="./assets/blog.jpg" />
+          <p>October 3, 2023</p>
+          <h2>A Keweenaw Visit</h2>
+          <p>
+            If you’re looking for a fun, jam-packed few days in the Keweenaw…
+            I’ve got you! Read on for places to eat and drink, some activities
+            to do, hikes to take, and a fun mine tour that dives into the
+            history of the copper boom. Thank you to Visit Keweenaw for
+            collaborating with me on this trip!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one">
+          <img src="./assets/blog.jpg" />
+          <p>October 3, 2023</p>
+          <h2>A Keweenaw Visit</h2>
+          <p>
+            If you’re looking for a fun, jam-packed few days in the Keweenaw…
+            I’ve got you! Read on for places to eat and drink, some activities
+            to do, hikes to take, and a fun mine tour that dives into the
+            history of the copper boom. Thank you to Visit Keweenaw for
+            collaborating with me on this trip!
+          </p>
+        </div>
+        <div class="one">
+          <img src="./assets/blog.jpg" />
+          <p>October 3, 2023</p>
+          <h2>A Keweenaw Visit</h2>
+          <p>
+            If you’re looking for a fun, jam-packed few days in the Keweenaw…
+            I’ve got you! Read on for places to eat and drink, some activities
+            to do, hikes to take, and a fun mine tour that dives into the
+            history of the copper boom. Thank you to Visit Keweenaw for
+            collaborating with me on this trip!
+          </p>
+        </div>
+        <div class="one">
+          <img src="./assets/blog.jpg" />
+          <p>October 3, 2023</p>
+          <h2>A Keweenaw Visit</h2>
+          <p>
+            If you’re looking for a fun, jam-packed few days in the Keweenaw…
+            I’ve got you! Read on for places to eat and drink, some activities
+            to do, hikes to take, and a fun mine tour that dives into the
+            history of the copper boom. Thank you to Visit Keweenaw for
+            collaborating with me on this trip!
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div id="social-icons">
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:your-email@gmail.com" target="_blank"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <p>Chimi Denkar @2023</p>
+      </footer>
+  </body>
 </html>
