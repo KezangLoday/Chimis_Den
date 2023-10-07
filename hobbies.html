@@ -99,6 +99,7 @@
     margin: 1% 2%;
     background-size: cover;
     background-position: center;
+    position: relative; /* Add this line */
   }
 
 
@@ -120,6 +121,25 @@
     margin-bottom: 10px;
     display: block;
   }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  .link-card i.icon,
+.link-card h2,
+.link-card p {
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+  color:#efeff3
+}
+  
+  
     </style>
   </head>
   <body>
@@ -160,28 +180,37 @@
 
         <div id="links">
           <div class="link-card faq-card" style="background-image: url('./assets/hobby1.jpg');">
-            <i class="fas fa-question-circle icon"></i>
-            <h2>Frequently Asked Questions</h2>
-            <p>Have questions? Find answers to commonly asked questions here.</p>
+            <div class="overlay"></div>
+
+            <i class="fas fa-headphones icon"></i>
+            <h2>Music</h2>
+            <p>Immersing myself in various genres of music is not just a hobby; it's my ultimate source of relaxation and inspiration.</p>
           </div>
           
           <div class="link-card testimonial-card" style="background-image: url('./assets/hobby2.jpg');">
-            <i class="fas fa-comment-dots icon"></i>
-            <h2>Testimonials</h2>
-            <p>See what people are saying about my blog.</p>
+            <div class="overlay"></div>
+
+            <i class="fas fa-utensils icon"></i>
+            <h2>Cooking</h2>
+            <p>Exploring new recipes and experimenting in the kitchen allows me to unleash my creativity and share delicious experiences with loved ones.</p>
           </div>
         </div>
         <div id="links">
           <div class="link-card faq-card" style="background-image: url('./assets/hobby3.jpg');">
-            <i class="fas fa-question-circle icon"></i>
-            <h2>Frequently Asked Questions</h2>
-            <p>Have questions? Find answers to commonly asked questions here.</p>
+            <div class="overlay"></div>
+
+            <i class="fas fa-spa icon"></i>
+            <h2>Yoga</h2>
+            <p>Practicing yoga is more than just a physical exercise; it's a holistic journey that nourishes my mind, body, and soul.</p>
           </div>
+          
           <div
-            class="link-card testimonial-card" style="background-image: url('./assets/hobby4.jpg');" >
-            <i class="fas fa-comment-dots icon"></i>
-            <h2>Testimonials</h2>
-            <p>See what people are saying about my blog.</p>
+            class="link-card testimonial-card " style="background-image: url('./assets/hobby4.jpg'); " >
+            <div class="overlay"></div>
+
+            <i class="fas fa-seedling icon"></i>
+            <h2>Gardening</h2>
+            <p>Tending to my garden is a therapeutic escape, where I find solace in nurturing plants and witnessing the beauty of nature's growth.</p>
           </div>
         </div>
       </div>
