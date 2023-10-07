@@ -76,8 +76,9 @@
    }
     
   .image-box img {
-    width : 80vw;
-    height: 100vh;
+    width : 200px;
+    margin:-10px 20px;
+    height: auto;
   }
   #links {
     display: flex;
@@ -90,15 +91,15 @@
 
   .link-card {
     display: flex;
-    background-color: #efeff3;
-    border: 1px solid #ddd;
+    background-color: #faf3dd;
+    border: 1px solid #68b0ab;
     border-radius: 5px;
-    width: 100%;
+    width: 100%; /* Adjust this value to control the maximum width of the card */
+    height: fit-content;
+    margin: 1% 2%;
     padding: 30px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Updated transition for smoother effect */
-    text-align: center;
-    margin: 1% 2%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
   .link-card:hover {
@@ -118,6 +119,25 @@
     font-size: 2em;
     margin-bottom: 10px;
     display: block;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    text-align: start;
+  }
+  .link-card img {
+    font-size: 2em;
+    margin-left: -30px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    width:200px;
+    /* Set the maximum width of the images */
+  }
+  .linkdiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
     </style>
   </head>
@@ -146,7 +166,7 @@
           <a href="./career.html">Career</a>
           <a href="./skills.html" style="text-decoration: underline;">Skills</a>
           <a href="./experience.html">Experience</a>
-<a href="./travels.html">Travels</a>
+          <a href="./travels.html">Travels</a>
           <a href="./hobbies.html">Hobbies</a>
 
      
@@ -155,34 +175,47 @@
       <div class="image-box">
 
         <h1 >Crafting Competence: My Skills Portfolio</h1>
+        <div class="linkdiv">
+          <div class="link-card faq-card">
+            <img src="./assets/skill1.jpg" alt="skill image" />
+            <div class="skills">
+              <h2>Accounting and Financial Management</h2>
+              <p>Proficient in financial accounting, reporting, and analysis. Experienced in managing budgets, financial statements, and conducting financial audits.</p>
+            </div>
+          </div>
 
-        <div id="links">
           <div class="link-card faq-card">
-            <i class="fas fa-question-circle icon"></i>
-            <h2>Frequently Asked Questions</h2>
-            <p>Have questions? Find answers to commonly asked questions here.</p>
+            <img src="./assets/skill2.jpg" alt="skill image" />
+            <div class="skills">
+              <h2>Sales and Customer Service</h2>
+              <p> Skilled in sales strategies, client relationship management, and providing excellent customer service. Demonstrated ability to meet sales targets and exceed customer expectations.</p>
+            </div>
+          </div>
+          <div class="link-card faq-card">
+            <img src="./assets/skill3.jpg" alt="skill image" />
+            <div class="skills">
+              <h2>Team Leadership and Management</h2>
+              <p>Skilled in leading and managing teams, delegating tasks, and ensuring the achievement of organizational goals. Effective in fostering a collaborative work environment.</p>
+            </div>
+          </div>
+
+          <div class="link-card faq-card">
+            <img src="./assets/skill4.jpg" alt="skill image" />
+            <div class="skills">
+              <h2>Problem Solving and Decision Making</h2>
+              <p>Strong analytical and problem-solving skills. Demonstrated ability to make informed decisions under pressure and in complex situations.</p>
+            </div>
+          </div>
+          <div class="link-card faq-card">
+            <img src="./assets/skill6.jpg" alt="skill image" />
+            <div class="skills">
+              <h2>HTML and CSS Web Development</h2>
+              <p>Proficient in creating and styling web pages using HTML and CSS. Experienced in building responsive and visually appealing websites. Strong understanding of web design principles and best practices.</p>
+            </div>
           </div>
         </div>
-        <div id="links">
-          <div class="link-card faq-card">
-            <i class="fas fa-question-circle icon"></i>
-            <h2>Frequently Asked Questions</h2>
-            <p>Have questions? Find answers to commonly asked questions here.</p>
-          </div>
-        </div>
-        <div id="links">
-          <div class="link-card faq-card">
-            <i class="fas fa-question-circle icon"></i>
-            <h2>Frequently Asked Questions</h2>
-            <p>Have questions? Find answers to commonly asked questions here.</p>
-          </div>
-        </div>
-        <div id="links">
-          <div class="link-card faq-card">
-            <i class="fas fa-question-circle icon"></i>
-            <h2>Frequently Asked Questions</h2>
-            <p>Have questions? Find answers to commonly asked questions here.</p>
-          </div>
+
+          
         </div>
       </div>
     </div>
