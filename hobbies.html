@@ -21,172 +21,61 @@
         padding: 0;
         font-family: "Inconsolata", monospace;
         background-color: #faf3dd;
+        min-height: 100vh;
       }
 
-      /* style for navbar */
-      header nav {
-        position: sticky;
-        top: 0;
+      .container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        background-color: #68b0ab;
-        padding: 10px;
+        min-height: 80vh;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
       }
+      
+      .text-box {
+        height: 100vh;
 
-      header nav #logo img {
-        height: 50px;
-        padding-left: 50px;
-      }
-
-      header nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        padding-right: 50px;
-      }
-
-      header nav ul li {
-        margin: 0 10px;
-      }
-
-      header nav ul li a {
-        text-decoration: none;
-        font-family: "Inconsolata", monospace;
+        padding: 20px;
+        /* box-sizing: border-box; */
         color: #1e1e1e;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        font-weight: bold; /* Changed from bolder */
-        font-size: large;
+        text-align: center;
+        background-color: #68b0ab;
       }
-
-      header nav ul li a:hover {
-        color: #fff;
-      }
-
-      /* style for footer */
-      footer {
+      .side-bar {
+        width:20vw;
+        height: 100vh;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #68b0ab;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-        background-color: #1e1e1e;
-        padding: 15px;
-        width: 100%;
-        bottom: 0;
-        height: 100px;
-      }
-
-      footer #social-icons i {
-        color: #fff;
-        margin: 0px 7px;
-        font-size: 25px;
-      }
-
-      footer p {
-        color: #fff;
-        font-size: smaller;
-      }
-
-      /* style for about us page */
-      #links {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-      }
-
-      .link-card {
-        background-color: #f0f0f0;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        width: 40%;
-        padding: 20px;
-        cursor: pointer;
-        transition: transform 0.3s;
-      }
-
-      .link-card:hover {
-        transform: translateY(-10px);
-      }
-
-      .link-card h2 {
-        margin-top: 0;
-      }
-
-      .link-card p {
-        margin: 10px 0 0;
-      }
-
-      /* Contact Us */
-      #contact {
-        display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 50px 150px;
-        line-height: 1.6;
+
+      }
+    .side-bar > a{
+      text-decoration: none;
+      color: #faf3dd;
+      font-size: 2rem;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      transition: ease-in-out 0.3s;
+    }
+      
+      .image-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
       }
       
-      .contact-image img {
-        width: 500px;
-        border-radius: 20px 20px 20px 20px;
-        margin-right: 150px; /* Added margin to create space */
-      }
-
-      .contact-form h1 {
-        font-size: 36px; /* Adjust the font size as needed */
-        margin-bottom: 10px;
-      }
-
-      .contact-form {
-        max-width: 400px;
-        width: 100%;
-      }
-
-      .contact-form h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      .contact-form p {
-        font-size: 17px;
-        margin-bottom: 20px;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
+      .image-box img {
+        width : 80vw;
+        height: 100vh;
         display: block;
-        width: 100%;
-        margin-bottom: 10px;
-        height: 20px; /* Adjust the height as needed */
-        border-radius: 10px; /* Adds curved edges */
-        padding: 10px; /* Adds padding for better spacing */
-      }
-
-      .contact-form textarea {
-        height: 150px; /* Adjust the height of the textarea as needed */
-        border: 2px solid #1e1e1e; /* Added border property */
-      }
-
-      .contact-form button {
-        background-color: #68b0ab;
-        color: white;
-        border: #1e1e1e;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: ease-in-out 0.3s;
-        border:2px solid #1e1e1e;
-        border-radius: 10px 10px 10px 10px;
-      }
-      .contact-form button:hover {
-      transform: scale(1.1);
-      }
-      
-
-      #errorMessage {
-        margin-top: 10px;
+        object-fit: cover;
       }
     </style>
   </head>
@@ -209,6 +98,26 @@
       </nav>
     </header>
 
+    <div class="container">
+      <div class="side-bar">
+        <a href="./portfolio.html">Portfolio</a>
+          <a href="./career.html">Career</a>
+          <a href="./skills.html">Skills</a>
+          <a href="./experience.html">Experience</a>
+<a href="./travels.html">Travels</a>
+          <a href="./hobbies.html" style="text-decoration: underline;">Hobbies</a>
+
+     
+      </div>
+   
+      <div class="image-box">
+        <img src="/assets/portfolio.jpg" alt="Portfolio Image" />
+      </div>
+    </div>
+
+    </div>
+    
+  
 
     <footer>
       <div id="social-icons">
@@ -224,6 +133,5 @@
       </div>
       <p>Chimi Denkar @2023</p>
     </footer>
-
   </body>
 </html>
