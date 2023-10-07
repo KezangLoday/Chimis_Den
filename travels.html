@@ -89,105 +89,38 @@
         color: #fff;
         font-size: smaller;
       }
-
-      /* style for about us page */
-      #links {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-      }
-
-      .link-card {
-        background-color: #f0f0f0;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        width: 40%;
-        padding: 20px;
-        cursor: pointer;
-        transition: transform 0.3s;
-      }
-
-      .link-card:hover {
-        transform: translateY(-10px);
-      }
-
-      .link-card h2 {
-        margin-top: 0;
-      }
-
-      .link-card p {
-        margin: 10px 0 0;
-      }
-
-      /* Contact Us */
-      #contact {
+      .travelcards {
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 50px 150px;
-        line-height: 1.6;
-      }
-      
-      .contact-image img {
-        width: 500px;
-        border-radius: 20px 20px 20px 20px;
-        margin-right: 150px; /* Added margin to create space */
-      }
+        flex-wrap: wrap;
+    }
 
-      .contact-form h1 {
-        font-size: 36px; /* Adjust the font size as needed */
-        margin-bottom: 10px;
-      }
+    .travelcards .card {
+        flex: 0 1 300px;
+        margin: 20px;
+    }
 
-      .contact-form {
-        max-width: 400px;
-        width: 100%;
-      }
+    .card {
+        border: 1px solid #ccc;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+    }
 
-      .contact-form h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
+    .card img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
 
-      .contact-form p {
-        font-size: 17px;
-        margin-bottom: 20px;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
-        height: 20px; /* Adjust the height as needed */
-        border-radius: 10px; /* Adds curved edges */
-        padding: 10px; /* Adds padding for better spacing */
-      }
-
-      .contact-form textarea {
-        height: 150px; /* Adjust the height of the textarea as needed */
-        border: 2px solid #1e1e1e; /* Added border property */
-      }
-
-      .contact-form button {
-        background-color: #68b0ab;
-        color: white;
-        border: #1e1e1e;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: ease-in-out 0.3s;
-        border:2px solid #1e1e1e;
-        border-radius: 10px 10px 10px 10px;
-      }
-      .contact-form button:hover {
-      transform: scale(1.1);
-      }
-      
-
-      #errorMessage {
-        margin-top: 10px;
-      }
+    .cardbox  {
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+    }
     </style>
   </head>
   <body>
@@ -209,6 +142,58 @@
       </nav>
     </header>
 
+    <h1>Welcome to Our Travels Page</h1>
+
+    <p>
+      Embark on a journey of discovery and adventure. Traveling opens up a world
+      of experiences and creates lasting memories. Whether you're an avid
+      explorer or a first-time traveler, our destinations promise to captivate
+      your senses and leave you with a sense of wonder.
+    </p>
+    <hr />
+
+    <h2 style="text-align: center">Featured Destinations</h2>
+   
+    <div class="travelcards">
+      <div class="cardbox">
+        <div class="card">
+          <img src="destination2.jpg" alt="Destination 2" />
+          <h3>Destination 2</h3>
+        </div>
+        <p>
+          Escape to the natural wonders of Destination 2. Explore pristine
+          landscapes and immerse yourself in the heart of nature.
+        </p>
+      </div>
+
+        <div class="cardbox">
+          <div class="card">
+            <img src="destination2.jpg" alt="Destination 2" />
+            <h3>Destination 2</h3>
+          </div>
+          <p>
+            Escape to the natural wonders of Destination 2. Explore pristine
+            landscapes and immerse yourself in the heart of nature.
+          </p>
+        </div>
+
+        <div class="cardbox">
+          <div class="card">
+            <img src="destination2.jpg" alt="Destination 2" />
+            <h3>Destination 2</h3>
+          </div>
+          <p>
+            Escape to the natural wonders of Destination 2. Explore pristine
+            landscapes and immerse yourself in the heart of nature.
+          </p>
+        </div>
+      </div>
+
+    <hr />
+
+    <p style="text-align: center">
+      Contact us today to start planning your next adventure!
+    </p>
 
     <footer>
       <div id="social-icons">
@@ -224,6 +209,5 @@
       </div>
       <p>Chimi Denkar @2023</p>
     </footer>
-
   </body>
 </html>
