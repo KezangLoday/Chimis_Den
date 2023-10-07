@@ -31,6 +31,8 @@
         background-size: cover;
         background-position: center;
         box-sizing: border-box;
+        padding-left: 20vw;
+
       }
       
       .text-box {
@@ -43,8 +45,11 @@
         background-color: #68b0ab;
       }
       .side-bar {
-        width:20vw;
-        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20vw;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -65,18 +70,15 @@
       transition: ease-in-out 0.3s;
     }
       
-      .image-box {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
-      
-      .image-box img {
-        width : 80vw;
-        height: 100vh;
-        display: block;
-        object-fit: cover;
-      }
+    .image-box {
+      text-align: center;
+      padding: 100px 50px;
+   }
+    
+  .image-box img {
+    width : 80vw;
+    height: 100vh;
+  }
     </style>
   </head>
   <body>

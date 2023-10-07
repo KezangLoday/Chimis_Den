@@ -30,6 +30,7 @@
         background-size: cover;
         background-position: center;
         box-sizing: border-box;
+        padding-left: 20vw;
       }
       
       .text-box {
@@ -42,8 +43,11 @@
         background-color: #68b0ab;
       }
       .side-bar {
-        width:20vw;
-        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20vw;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -52,7 +56,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
       }
     .side-bar > a{
       text-decoration: none;
@@ -65,7 +68,8 @@
     }
       
     .image-box {
-        padding : 20px; 
+        text-align: center;
+        padding: 100px 50px;
      }
       
     .image-box img {
@@ -76,26 +80,26 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 0 50px
     }
 
     .travelcards .card {
-        flex: 0 1 300px;
+        flex: 0 1 200px;
         margin: 20px;
     }
 
     .card {
-        border: 1px solid #ccc;
         margin: 20px;
-        padding: 10px;
         text-align: center;
-        max-width: 300px;
+        max-width: 400px;
         margin: auto;
     }
 
     .card img {
         max-width: 100%;
-        border-radius: 8px;
-    }
+        height: 400px; /* Set a specific height for the images */
+        object-fit: cover; /* Maintain aspect ratio */
+      }
 
     .cardbox  {
         margin: 20px;
@@ -128,74 +132,131 @@
       <div class="side-bar">
         <a href="./portfolio.html">Portfolio</a>
           <a href="./career.html">Career</a>
-          <a href="./skills.html" style="text-decoration: underline;">Skills</a>
+          <a href="./skills.html" >Skills</a>
           <a href="./experience.html">Experience</a>
-          <a href="./travels.html">Travels</a>
+          <a href="./travels.html" style="text-decoration: underline;" >Travels</a>
           <a href="./hobbies.html">Hobbies</a>
 
      
       </div>
    
       <div class="image-box">
-        <h1>Welcome to Our Travels Page</h1>
+        <h1 >Welcome to My Travelling Journey</h1>
 
-        <p>
-          Embark on a journey of discovery and adventure. Traveling opens up a world
-          of experiences and creates lasting memories. Whether you're an avid
-          explorer or a first-time traveler, our destinations promise to captivate
-          your senses and leave you with a sense of wonder.
-        </p>
+        <div >
+            <p>
+                Embark on a journey of discovery and adventure. Traveling opens up a world
+                of experiences and creates lasting memories. Whether you're an avid
+                explorer or a first-time traveler, our destinations promise to captivate
+                your senses and leave you with a sense of wonder.
+            </p>
+        </div>
         <hr />
     
-        <h2 style="text-align: center">Featured Destinations</h2>
-       
+        <h2>Queensland</h2>
+
         <div class="travelcards">
           <div class="cardbox">
             <div class="card">
-              <img src="destination2.jpg" alt="Destination 2" />
-              <h3>Destination 2</h3>
+              <img src="./assets/travels.jpg" alt="travel pics" />
             </div>
             <p>
-              Escape to the natural wonders of Destination 2. Explore pristine
-              landscapes and immerse yourself in the heart of nature.
+              Shay wa joye nga charo tsu ngyam
             </p>
           </div>
     
             <div class="cardbox">
               <div class="card">
-                <img src="destination2.jpg" alt="Destination 2" />
-                <h3>Destination 2</h3>
+                <img src="./assets/travels1.jpg" alt="travel pics" />
               </div>
               <p>
-                Escape to the natural wonders of Destination 2. Explore pristine
-                landscapes and immerse yourself in the heart of nature.
+                Nam ya soye tey
               </p>
             </div>
     
             <div class="cardbox">
               <div class="card">
-                <img src="destination2.jpg" alt="Destination 2" />
-                <h3>Destination 2</h3>
+                <img src="./assets/travels3.jpg" alt="travel pics" />
               </div>
               <p>
-                Escape to the natural wonders of Destination 2. Explore pristine
-                landscapes and immerse yourself in the heart of nature.
+                Phom Khe ne Sho nang ra phewa 
+              </p>
+            </div>
+          </div>
+          <div class="travelcards">
+            <div class="cardbox">
+              <div class="card">
+                <img src="./assets/travels.jpg" alt="travel pics" />
+              </div>
+              <p>
+                Shay wa joye nga charo tsu ngyam
+              </p>
+            </div>
+      
+              <div class="cardbox">
+                <div class="card">
+                  <img src="./assets/travels1.jpg" alt="travel pics" />
+                </div>
+                <p>
+                  Nam ya soye tey
+                </p>
+              </div>
+      
+              <div class="cardbox">
+                <div class="card">
+                  <img src="./assets/travels3.jpg" alt="travel pics" />
+                </div>
+                <p>
+                  Phom Khe ne Sho nang ra phewa 
+                </p>
+              </div>
+            </div>
+
+            <hr />
+    
+        <h2>Sydney</h2>
+       
+        <div class="travelcards">
+          <div class="cardbox">
+            <div class="card">
+              <img src="./assets/travels4.jpg" alt="travel pics" />
+            </div>
+            <p>
+              Swim phe ley dewa
+            </p>
+          </div>
+    
+            <div class="cardbox">
+              <div class="card">
+                <img src="./assets/travels5.jpg" alt="travel pics" />
+              </div>
+              <p>
+                goth cho leksowa
+              </p>
+            </div>
+    
+            <div class="cardbox">
+              <div class="card">
+                <img src="./assets/travels6.jpg" alt="travel pics" />
+              </div>
+              <p>
+                Ngam nub na 
               </p>
             </div>
           </div>
     
         <hr />
+
+        <p>
+            "Travel makes one modest. You see what a tiny place you occupy in the world." - Gustave Flaubert
+          </p>
 
       </div>
     </div>
 
     </div>
 
-    
 
-    <p style="text-align: center">
-      Contact us today to start planning your next adventure!
-    </p>
 
     <footer>
       <div id="social-icons">
