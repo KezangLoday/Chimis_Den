@@ -72,6 +72,7 @@
     .image-box {
       text-align: center;
       padding: 100px 50px;
+      margin: 0 auto;
    }
     
   .image-box img {
@@ -91,7 +92,9 @@
     background-color: #efeff3;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%;
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
     padding: 80px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Updated transition for smoother effect */
@@ -116,28 +119,13 @@
     margin: 10px 0 0;
   }
 
-  .link-card i.icon {
+  .link-card i.icon, .link-card p, .link-card h2{
     font-size: 2em;
     margin-bottom: 10px;
-    display: block;
+    display: none;
   }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-  }
-  .link-card i.icon,
-.link-card h2,
-.link-card p {
-  position: relative; /* Add this line */
-  z-index: 1; /* Add this line */
-  color:#efeff3
-}
+
   
   
     </style>
@@ -168,8 +156,8 @@
           <a href="./skills.html">Skills</a>
           <a href="./experience.html">Experience</a>
           <a href="./travels.html">Travels</a>
-          <a href="./hobbies.html" style="text-decoration: underline;">Hobbies</a>
-          <a href="./achievement.html">Achievement</a>
+          <a href="./hobbies.html">Hobbies</a>
+          <a href="./achievement.html" style="text-decoration: underline;">Achievement</a>
 
 
      
@@ -177,20 +165,18 @@
    
       <div class="image-box">
 
-        <h1 >Where My Heart Finds Joy</h1>
+        <h1 >Journey of Accomplishments</h1>
 
 
         <div id="links">
-          <div class="link-card faq-card" style="background-image: url('./assets/hobby1.jpg');">
-            <div class="overlay"></div>
+          <div class="link-card faq-card" style="background-image: url('./assets/ach1.png');">
 
             <i class="fas fa-headphones icon"></i>
             <h2>Music</h2>
             <p>Immersing myself in various genres of music is not just a hobby; it's my ultimate source of relaxation and inspiration.</p>
           </div>
           
-          <div class="link-card testimonial-card" style="background-image: url('./assets/hobby2.jpg');">
-            <div class="overlay"></div>
+          <div class="link-card testimonial-card" style="background-image: url('./assets/ach2.png');">
 
             <i class="fas fa-utensils icon"></i>
             <h2>Cooking</h2>
@@ -198,8 +184,7 @@
           </div>
         </div>
         <div id="links">
-          <div class="link-card faq-card" style="background-image: url('./assets/hobby3.jpg');">
-            <div class="overlay"></div>
+          <div class="link-card faq-card" style="background-image: url('./assets/ach3.png');">
 
             <i class="fas fa-spa icon"></i>
             <h2>Yoga</h2>
@@ -207,14 +192,21 @@
           </div>
           
           <div
-            class="link-card testimonial-card " style="background-image: url('./assets/hobby4.jpg'); " >
-            <div class="overlay"></div>
-
-            <i class="fas fa-seedling icon"></i>
-            <h2>Gardening</h2>
-            <p>Tending to my garden is a therapeutic escape, where I find solace in nurturing plants and witnessing the beauty of nature's growth.</p>
+            class="link-card testimonial-card " style="background-image: url('./assets/ach4.png'); " >
           </div>
         </div>
+        <div id="links">
+            <div class="link-card faq-card" style="background-image: url('./assets/ach5.png');">
+  
+              <i class="fas fa-spa icon"></i>
+              <h2>Yoga</h2>
+              <p>Practicing yoga is more than just a physical exercise; it's a holistic journey that nourishes my mind, body, and soul.</p>
+            </div>
+            
+            <div
+              class="link-card testimonial-card " style="background-image: url('./assets/ach6.png'); " >
+            </div>
+          </div>
       </div>
     </div>
 
