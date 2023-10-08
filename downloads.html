@@ -1,120 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chimi's Den</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-  />
-
 
     <style>
-      /* CSS styles for the webpage */
-      body {
-        margin: 0;
-        padding: 0;
-      }
+        /* CSS styles for the webpage */
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-      .container {
-        max-width: 800px;
-        height:60vh;
-        margin: 0 auto 100px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      h1 {
-        color: #333;
-      }
-      h2 {
-        color: #333;
-        margin-top: 20px;
-      }
-      p {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #555;
-      }
-      .download-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #68b0ab;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-        margin-top: 20px;
-        transition: ease-in-out 0.3s;
-      }
-      .download-button:hover {
-        background-color: #0cc893;
-      }
-    
+        .Dcontainer {
+            max-width: 800px;
+            height: 60vh;
+            margin: 0 auto 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .Dcontainer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .Dcontainer li {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Dcontainer li i {
+            font-size: 36px;
+            color: #68b0ab;
+            margin-right: 10px;
+        }
+
+        .Dcontainer li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .Feature-Downloads-Section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .Feature-Downloads-Section li {
+            width: 30%;
+            border: 1px solid #68b0ab;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            transition:ease-in-out 0.3s;
+        }
+        .Feature-Downloads-Section li:hover{
+            background-color: #fff3dd;
+            color: #fff;
+        }
+        .contact{
+          color: #68b0ab;
+        }
+
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <div id="logo">
+                <a href="index.html"
+                    ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
+                /></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+        </nav>
     </header>
 
     <h1 style="margin-top: 100px; text-align: center">Downloads</h1>
-    <div class="container">
-      <h2>Welcome to my Download Page</h2>
-      <p>
-        On this page, you can find and download various resources, files, and
-        materials related to my blog content. We hope you find them useful!
-      </p>
+    <div class="Dcontainer">
+        <h2>Welcome to my Download Page</h2>
+        <p>
+            On this page, you can find and download various resources, files, and
+            materials related to my blog content. We hope you find them useful!
+        </p>
 
-      <h2>Featured Downloads</h2>
-      <ul>
-        <li><a href="download-link-1">Curriculum Vitae(PDF)</a></li>
-        <li><a href="download-link-2">Gratitude(PDF)</a></li>
-        <li><a href="download-link-3">Ways to Life (PDF)</a></li>
-      </ul>
+        <h2>Featured Downloads</h2>
+        <ul class="Feature-Downloads-Section">
+            <li><i class="far fa-file-alt icon"></i><a href="download-link-1">Curriculum Vitae(PDF)</a></li>
+            <li><i class="fas fa-heart icon"></i><a href="download-link-2">Gratitude(PDF)</a></li>
+            <li><i class="fas fa-leaf icon"></i><a href="download-link-3">Ways to Life (PDF)</a></li>
+        </ul>
+        <ul class="Feature-Downloads-Section">
+            <li><i class="fas fa-images icon"></i><a href="download-link-1">Wallpapers(PNG)</a></li>
+            <li><i class="fas fa-palette icon"></i><a href="download-link-2">Printable Art(PNG)</a></li>
+            <li><i class="fas fa-video icon"></i><a href="download-link-3">Video Tutorials(MP4)</a></li>
+        </ul>
 
-      <h2>Additional Information</h2>
-      <p>
-        If you're looking for specific resources or have any questions about my
-        downloads, please feel free to <a href="./contact.html">contact me</a>.
-        I'm here to assist you!
-      </p>
+        <h2>Additional Information</h2>
+        <p>
+            If you're looking for specific resources or have any questions about my
+            downloads, please feel free to <a class="contact" href="./contact.html">contact me</a>.
+            I'm here to assist you!
+        </p>
     </div>
     <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>me
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:your-email@gmail.com" target="_blank"
-          ><i class="fas fa-envelope"></i
-        ></a>
-      </div>
-      <p>Chimi Denkar @2023</p>
+        <div id="social-icons">
+            <a href="https://www.instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i></a
+            >
+            <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:your-email@gmail.com" target="_blank"
+                ><i class="fas fa-envelope"></i
+            ></a>
+        </div>
+        <p>Chimi Denkar @2023</p>
     </footer>
-  </body>
+</body>
+
 </html>
