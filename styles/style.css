@@ -754,6 +754,9 @@ footer a {
 .contact {
   color: #68b0ab;
 }
+.contact:hover{
+  color: #1e1e1e;
+}
 .Feature-Downloads-Section {
   display: flex;
   justify-content: space-between;
