@@ -17,7 +17,7 @@ header nav {
   align-items: center;
   background-color: #68b0ab;
   padding: 10px;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
 }
 
