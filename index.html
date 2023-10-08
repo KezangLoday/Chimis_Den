@@ -1,307 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chimi's Den</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chimi's Den</title>
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-    rel="stylesheet" />
+    <style>
+      .Hero-Section {
+        width: 95%;
+        min-height: 800px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5vw;
+      }
 
-  <style>
-    .Hero-Section {
-      width: 95%;
-      min-height: 800px;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 5vw;
-    }
+      .Highlights {
+        height: 600px;
+        width: 100vw;
+        background-color: #68b0ab;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        font-weight: 600;
+      }
 
-    .Highlights {
-      height: 600px;
-      width: 100vw;
-      background-color: #68b0ab;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: x-large;
-      font-weight: 600;
-    }
+      .Lights {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+      }
 
-    .Lights {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 100vw;
-    }
+      .Light {
+        height: 400px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
 
-    .Light {
-      height: 400px;
-      width: 300px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-    }
+      .Light p {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease-in-out 0.3s;
+      }
 
-    .Light p {
-      color: white;
-      font-size: 20px;
-      font-weight: 600;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: ease-in-out 0.3s;
-    }
+      .Light p:hover {
+        margin: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 400px;
+      }
 
-    .Light p:hover {
-      margin: 0px 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 400px;
-    }
+      .parallax {
+        min-height: 500px;
+        background-image: url("./assets/lake.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* color: white; */
+      }
 
-    .parallax {
-      min-height: 500px;
-      background-image: url("./assets/lake.jpeg");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      /* color: white; */
-    }
+      .parallax button {
+        height: 50px;
+        width: 150px;
+        font-size: 1.25rem;
+        color: #fff;
+        border-radius: 10px;
+        border-color: white;
+        background-color: #ffffff00;
+        transition: ease-in-out 0.3s;
+      }
 
-    .parallax button {
-      height: 50px;
-      width: 150px;
-      font-size: 1.25rem;
-      color: #fff;
-      border-radius: 10px;
-      border-color: white;
-      background-color: #ffffff00;
-      transition: ease-in-out 0.3s;
-    }
+      .parallax h1 {
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        font-weight: 600;
+        color: #00000003;
+        font-size: 4rem;
+      }
 
-    .parallax h1 {
-      -webkit-text-stroke-width: 3px;
-      -webkit-text-stroke-color: rgb(255, 255, 255);
-      font-weight: 600;
-      color: #00000003;
-      font-size: 4rem;
-    }
+      .parallax button:hover {
+        color: #000;
+        background-color: #ffffff;
+      }
 
-    .parallax button:hover {
-      color: #000;
-      background-color: #ffffff;
-    }
+      .Upcoming-Events {
+        text-align: center;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+      }
 
-    .Upcoming-Events {
-      text-align: center;
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 50px;
-      align-items: center;
-    }
+      .Upcoming-Events > h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
 
-    .Upcoming-Events>h1 {
-      font-size: 3rem;
-      font-weight: 600;
-    }
+      .Head-Content {
+        text-align: left;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: "Inconsolata", monospace;
+        font-size: 22px;
+      }
 
-    .Head-Content {
-      text-align: left;
-      margin-top: 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      font-family: "Inconsolata", monospace;
-      font-size: 22px;
-    }
+      .Event-Collection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 75px;
+      }
 
-    .Event-Collection {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 75px;
-    }
+      .Event-Tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        margin-bottom: 4rem;
+        box-sizing: content-box;
+        border-radius: 10px;
+        height: 300px;
+        width: 400px;
+        text-align: left;
+        background-color: #68b0ab;
+        color: aliceblue;
+      }
 
-    .Event-Tab {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 10px;
-      margin-bottom: 4rem;
-      box-sizing:content-box;
-      border-radius: 10px;
-      height: 300px;
-      width: 400px;
-      text-align: left;
-      background-color: #68b0ab;
-      color: aliceblue;
-    
+      .Xp {
+        height: 50px;
+        width: 150px;
+        font-size: 1.25rem;
+        color: #fff;
+        border-radius: 10px;
+        border-color: white;
+        background-color: #68b0ab;
+        transition: ease-in-out 0.3s;
+      }
 
-    }
+      .Xp:hover {
+        color: #000;
+        background-color: #ffffff0f;
+        border-color: black;
+      }
 
-    .Xp {
-      height: 50px;
-      width: 150px;
-      font-size: 1.25rem;
-      color: #fff;
-      border-radius: 10px;
-      border-color: white;
-      background-color: #68b0ab;
-      transition: ease-in-out 0.3s;
-    }
+      .LinkIn {
+        height: 50px;
+        width: 150px;
+        font-size: 1.25rem;
+        color: #000;
+        border-radius: 10px;
+        border-color: black;
+        background-color: #ffffff00;
+        transition: ease-in-out 0.3s;
+      }
 
-    .Xp:hover {
-      color: #000;
-      background-color: #ffffff0f;
-      border-color: black;
-    }
+      .LinkIn:hover {
+        color: #fff;
+        border-color: #fff;
+        background-color: #68b0ab;
+      }
+      .dropdown {
+        position: relative;
+      }
 
-    .LinkIn {
-      height: 50px;
-      width: 150px;
-      font-size: 1.25rem;
-      color: #000;
-      border-radius: 10px;
-      border-color: black;
-      background-color: #ffffff00;
-      transition: ease-in-out 0.3s;
-    }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #68b0ab;
+        max-width: 110px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
 
-    .LinkIn:hover {
-      color: #fff;
-      border-color: #fff;
-      background-color: #68b0ab;
-    }
-  </style>
-</head>
+      .dropdown-content li {
+        padding: 10px;
+        display: block;
+        width: 100%;
+      }
 
-<body>
-  <header>
-    <nav>
-      <div id="logo">
-        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="downloads.html">Downloads</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Header Section Starts From Here -->
-  <div class="Hero-Section">
-    <div class="Head-Content" style="text-align: left;">
-      <h1>Welcome to My Den</h1>
-      <p style="width:30vw; text-align: left;">
-        Hello Guys, It's me, Chimi Denkar who loves food, travel, adventures and
-        unveiling untold stories. Stay tuned for the jam.</p>
-      <div style="display: flex; gap: 20px;">
-        <button class="Xp" onclick="window.location='/experience.html'">Experience</button>
-        <button class="LinkIn">LinkedIn</button>
-      </div>
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content > li:hover a {
+        color: #fff;
+      }
+    </style>
+  </head>
 
-
-    </div>
-    </p>
-    <div style="position: relative;">
-   <img src="./assets/Hero.png"/>
-        
-
-    </div>
-  </div>
-  <!-- Header Section Ends Here -->
-
-  <!-- Highlights of the Year -->
-  <div class="Highlights">
-    <h1>Highlights of the Year</h1>
-    <div class="Lights">
-      <div class="Light" style="background: url(./assets/hike.png)">
-        <p>Chimmi's Den at Hike</p>
-      </div>
-      <div class="Light" style="background: url(./assets/sun_rise.png)">
-        <p>Chimmi's Den and Sunrise</p>
-      </div>
-      <div class="Light" style="background: url(./assets/city.png)">
-        <p>Chimmi's Den and The City</p>
-      </div>
-    </div>
-  </div>
-  <!-- End of Highlights of the Year -->
-
-  <!-- Start Parallax -->
-  <div class="parallax">
-    <h1>The Tale at the Boat</h1>
-    <button>Learn More</button>
-  </div>
-  <!-- End of Parallax -->
-
-  <!-- Start of Upcoming Events -->
-  <div class="Upcoming-Events">
-    <h1>Upcoming Events</h1>
-    <div class="Event-Collection">
-
-      <div class="Event-Tab">
-        <h1>Web Development Workshop</h1>
-        <p>
-          Date: October 21, 2023<br><br>
-          Location: Tech Hub, 123 Canberra Ave, Canberra<br><br>
-          Details: Join us for a hands-on workshop on modern web development practices. Learn how to build responsive
-          and interactive websites using the latest frameworks and libraries. Whether you're a beginner or an
-          experienced developer, this workshop offers valuable insights and networking opportunities.
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <a href="index.html"
+            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="about.html">About Me</a>
+            <!-- Add dropdown content -->
+            <ul class="dropdown-content">
+              <li><a href="about.html">Myself</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section Starts From Here -->
+    <div class="Hero-Section">
+      <div class="Head-Content" style="text-align: left">
+        <h1>Welcome to My Den</h1>
+        <p style="width: 30vw; text-align: left">
+          Hello Guys, It's me, Chimi Denkar who loves food, travel, adventures
+          and unveiling untold stories. Stay tuned for the jam.
         </p>
+        <div style="display: flex; gap: 20px">
+          <button class="Xp" onclick="window.location='/experience.html'">
+            Experience
+          </button>
+          <button class="LinkIn">LinkedIn</button>
+        </div>
       </div>
-      <div class="Event-Tab">
-        <h1>Cultural Exchange Fair</h1>
-        <p>
-          Date: November 10, 2023<br><br>
-          Location: Community Center, 456 Parliament Dr, Canberra<br><br>
-          Details: Explore diverse cultures, traditions, and cuisines at our annual Cultural Exchange Fair. The event
-          features cultural booths, traditional performances, and a variety of international dishes to sample. It's a
-          fantastic opportunity to broaden your horizons and meet individuals from different backgrounds.
-        </p>
+      <div style="position: relative">
+        <img src="./assets/Hero.png" />
       </div>
     </div>
-  </div>
+    <!-- Header Section Ends Here -->
 
-  <!-- End of Upcoming Events -->
-
-
-  <footer>
-    <div id="social-icons">
-      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <!-- Highlights of the Year -->
+    <div class="Highlights">
+      <h1>Highlights of the Year</h1>
+      <div class="Lights">
+        <div class="Light" style="background: url(./assets/hike.png)">
+          <p>Chimmi's Den at Hike</p>
+        </div>
+        <div class="Light" style="background: url(./assets/sun_rise.png)">
+          <p>Chimmi's Den and Sunrise</p>
+        </div>
+        <div class="Light" style="background: url(./assets/city.png)">
+          <p>Chimmi's Den and The City</p>
+        </div>
+      </div>
     </div>
-    <p>Chimi Denkar @2023</p>
-  </footer>
-</body>
+    <!-- End of Highlights of the Year -->
 
+    <!-- Start Parallax -->
+    <div class="parallax">
+      <h1>The Tale at the Boat</h1>
+      <button>Learn More</button>
+    </div>
+    <!-- End of Parallax -->
+
+    <!-- Start of Upcoming Events -->
+    <div class="Upcoming-Events">
+      <h1>Upcoming Events</h1>
+      <div class="Event-Collection">
+        <div class="Event-Tab">
+          <h1>Web Development Workshop</h1>
+          <p>
+            Date: October 21, 2023<br /><br />
+            Location: Tech Hub, 123 Canberra Ave, Canberra<br /><br />
+            Details: Join us for a hands-on workshop on modern web development
+            practices. Learn how to build responsive and interactive websites
+            using the latest frameworks and libraries. Whether you're a beginner
+            or an experienced developer, this workshop offers valuable insights
+            and networking opportunities.
+          </p>
+        </div>
+        <div class="Event-Tab">
+          <h1>Cultural Exchange Fair</h1>
+          <p>
+            Date: November 10, 2023<br /><br />
+            Location: Community Center, 456 Parliament Dr, Canberra<br /><br />
+            Details: Explore diverse cultures, traditions, and cuisines at our
+            annual Cultural Exchange Fair. The event features cultural booths,
+            traditional performances, and a variety of international dishes to
+            sample. It's a fantastic opportunity to broaden your horizons and
+            meet individuals from different backgrounds.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Upcoming Events -->
+
+    <footer>
+      <div id="social-icons">
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:your-email@gmail.com" target="_blank"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <p>Chimi Denkar @2023</p>
+    </footer>
+  </body>
 </html>

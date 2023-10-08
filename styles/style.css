@@ -50,6 +50,11 @@ header nav ul li a:hover {
   color: #fff;
   transition: ease-in-out 0.3s;
 }
+.active{
+  color: #fff;
+  text-decoration: underline;
+  transition: ease-in-out 0.3s;
+}
 
 /* style for footer */
 footer {
