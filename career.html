@@ -15,103 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Inconsolata", monospace;
-        background-color: #faf3dd;
-        min-height: 100vh;
-      }
-      header nav {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .container {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        min-height: 80vh;
-        background-size: cover;
-        background-position: center;
-        box-sizing: border-box;
-        padding-left: 20vw;
-      }
-
-      .text-box {
-        height: 100vh;
-
-        padding: 20px;
-        color: #1e1e1e;
-        text-align: left;
-        background-color: #68b0ab;
-      }
-      .side-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 20vw;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: #68b0ab;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .side-bar > a {
-        text-decoration: none;
-        color: #faf3dd;
-        font-size: 2rem;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        transition: ease-in-out 0.3s;
-      }
-
-      .image-box {
-        text-align: center;
-        padding: 100px 50px;
-      }
-
-      .image-box img {
-        width: 80vw;
-        height: 100vh;
-      }
-      .dropdown {
-        position: relative;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #68b0ab;
-        max-width: 110px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content li {
-        padding: 10px;
-        display: block;
-        width: 100%;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown-content > li:hover a {
-        color: #fff;
-      }
-    </style>
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="port">
         <div id="logo">
           <a href="index.html"
             ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
@@ -146,86 +54,16 @@
         <a href="./achievement.html">Achievement</a>
       </div>
 
-      <div class="image-box">
+      <div class="cimage-box">
         <h1>Career Chronicles: Navigating Paths to Success</h1>
-        <div
-          class="container"
-          style="
-            display: flex;
-            flex-direction: row;
-            padding: 20px;
-            height: 600px;
-            justify-content: center;
-          "
-        >
-          <div
-            style="
-              margin-right: 50px;
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-            "
-          >
-            <div
-              class=""
-              style="
-                border: #1e1e1e dashed 10px;
-                height: 100px;
-                width: 100px;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 4rem;
-                font-weight: bold;
-              "
-            >
-              1
-            </div>
-            <div
-              class=""
-              style="
-                border: #1e1e1e dashed 10px;
-                height: 100px;
-                width: 100px;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 4rem;
-                font-weight: bold;
-              "
-            >
-              2
-            </div>
-            <div
-              class=""
-              style="
-                border: #1e1e1e dashed 10px;
-                height: 100px;
-                width: 100px;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 4rem;
-                font-weight: bold;
-              "
-            >
-              3
-            </div>
+        <div class="ccontainer">
+          <div class="careerhead">
+            <div class="careernum">1</div>
+            <div class="careernum">2</div>
+            <div class="careernum">3</div>
           </div>
 
-          <div
-            style="
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              font-size: 1.25rem;
-            "
-          >
+          <div class="careerbot">
             <div class="section">
               <p>
                 <strong

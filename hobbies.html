@@ -15,162 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Inconsolata", monospace;
-        background-color: #faf3dd;
-        min-height: 100vh;
-      }
-      header nav {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .container {
-        display: flex;
-        align-items: center;
-        min-height: 80vh;
-        background-size: cover;
-        background-position: center;
-        box-sizing: border-box;
-        padding-left: 20vw;
-      }
-
-      .text-box {
-        height: 100vh;
-
-        padding: 20px;
-        /* box-sizing: border-box; */
-        color: #1e1e1e;
-        text-align: center;
-        background-color: #68b0ab;
-      }
-      .side-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 20vw;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: #68b0ab;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .side-bar > a {
-        text-decoration: none;
-        color: #faf3dd;
-        font-size: 2rem;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        transition: ease-in-out 0.3s;
-      }
-
-      .image-box {
-        text-align: center;
-        padding: 100px 50px;
-      }
-
-      .image-box img {
-        width: 80vw;
-        height: 100vh;
-      }
-      #links {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 10px;
-      }
-
-      .link-card {
-        background-color: #efeff3;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        width: 100%;
-        padding: 80px;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Updated transition for smoother effect */
-        text-align: center;
-        margin: 1% 2%;
-        background-size: cover;
-        background-position: center;
-        position: relative; /* Add this line */
-      }
-
-      .link-card:hover {
-        transform: scale(1.05); /* Updated transform property */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow property */
-      }
-
-      .link-card h2 {
-        margin-top: 0;
-      }
-
-      .link-card p {
-        margin: 10px 0 0;
-      }
-
-      .link-card i.icon {
-        font-size: 2em;
-        margin-bottom: 10px;
-        display: block;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-      }
-      .link-card i.icon,
-      .link-card h2,
-      .link-card p {
-        position: relative; /* Add this line */
-        z-index: 1; /* Add this line */
-        color: #efeff3;
-      }
-
-      .dropdown {
-        position: relative;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #68b0ab;
-        max-width: 110px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content li {
-        padding: 10px;
-        display: block;
-        width: 100%;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown-content > li:hover a {
-        color: #fff;
-      }
-    </style>
+ 
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="port">
         <div id="logo">
           <a href="index.html"
             ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
@@ -206,12 +56,12 @@
         <a href="./achievement.html">Achievement</a>
       </div>
 
-      <div class="image-box">
+      <div class="himage-box">
         <h1>Where My Heart Finds Joy</h1>
 
         <div id="links">
           <div
-            class="link-card faq-card"
+            class="hlink-card faq-card"
             style="background-image: url('./assets/hobby1.jpg')"
           >
             <div class="overlay"></div>
@@ -225,7 +75,7 @@
           </div>
 
           <div
-            class="link-card testimonial-card"
+            class="hlink-card testimonial-card"
             style="background-image: url('./assets/hobby2.jpg')"
           >
             <div class="overlay"></div>
@@ -241,7 +91,7 @@
         </div>
         <div id="links">
           <div
-            class="link-card faq-card"
+            class="hlink-card faq-card"
             style="background-image: url('./assets/hobby3.jpg')"
           >
             <div class="overlay"></div>
@@ -255,7 +105,7 @@
           </div>
 
           <div
-            class="link-card testimonial-card"
+            class="hlink-card testimonial-card"
             style="background-image: url('./assets/hobby4.jpg')"
           >
             <div class="overlay"></div>

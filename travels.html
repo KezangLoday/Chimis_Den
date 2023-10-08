@@ -15,133 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Inconsolata", monospace;
-        background-color: #faf3dd;
-      }
-      header nav {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
 
-      .container {
-        display: flex;
-        align-items: center;
-        min-height: 80vh;
-        background-size: cover;
-        background-position: center;
-        box-sizing: border-box;
-        padding-left: 20vw;
-      }
-
-      .text-box {
-        height: 100vh;
-
-        padding: 20px;
-        /* box-sizing: border-box; */
-        color: #1e1e1e;
-        text-align: center;
-        background-color: #68b0ab;
-      }
-      .side-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 20vw;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: #68b0ab;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .side-bar > a {
-        text-decoration: none;
-        color: #faf3dd;
-        font-size: 2rem;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        transition: ease-in-out 0.3s;
-      }
-
-      .image-box {
-        text-align: center;
-        padding: 100px 50px;
-      }
-
-      .image-box img {
-        width: 80vw;
-        height: 100vh;
-      }
-      .travelcards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 50px;
-      }
-
-      .travelcards .card {
-        flex: 0 1 200px;
-        margin: 20px;
-      }
-
-      .card {
-        margin: 20px;
-        text-align: center;
-        max-width: 400px;
-        margin: auto;
-      }
-
-      .card img {
-        max-width: 100%;
-        height: 400px; /* Set a specific height for the images */
-        object-fit: cover; /* Maintain aspect ratio */
-      }
-
-      .cardbox {
-        margin: 20px;
-        padding: 10px;
-        text-align: center;
-        max-width: 300px;
-        margin: auto;
-      }
-      .dropdown {
-        position: relative;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #68b0ab;
-        max-width: 110px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content li {
-        padding: 10px;
-        display: block;
-        width: 100%;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown-content > li:hover a {
-        color: #fff;
-      }
-    </style>
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="port">
         <div id="logo">
           <a href="index.html"
             ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
@@ -176,7 +55,7 @@
         <a href="./achievement.html">Achievement</a>
       </div>
 
-      <div class="image-box">
+      <div class="timage-box">
         <h1>Welcome to My Travelling Journey</h1>
 
         <div>

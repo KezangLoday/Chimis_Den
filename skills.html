@@ -15,161 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Inconsolata", monospace;
-        background-color: #faf3dd;
-        min-height: 100vh;
-      }
-      header nav {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .container {
-        display: flex;
-        align-items: center;
-        min-height: 80vh;
-        background-size: cover;
-        background-position: center;
-        box-sizing: border-box;
-        padding-left: 20vw;
-      }
 
-      .text-box {
-        height: 100vh;
-
-        padding: 20px;
-        /* box-sizing: border-box; */
-        color: #1e1e1e;
-        text-align: center;
-        background-color: #68b0ab;
-      }
-      .side-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 20vw;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: #68b0ab;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .side-bar > a {
-        text-decoration: none;
-        color: #faf3dd;
-        font-size: 2rem;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        transition: ease-in-out 0.3s;
-      }
-
-      .image-box {
-        text-align: center;
-        padding: 100px 50px;
-      }
-
-      .image-box img {
-        width: 200px;
-        margin: -10px 20px;
-        height: auto;
-      }
-      #links {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 10px;
-      }
-
-      .link-card {
-        display: flex;
-        background-color: #faf3dd;
-        border: 1px solid #68b0ab;
-        border-radius: 5px;
-        width: 100%; /* Adjust this value to control the maximum width of the card */
-        height: fit-content;
-        margin: 1% 2%;
-        padding: 30px;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      }
-
-      .link-card:hover {
-        transform: scale(1.05); /* Updated transform property */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow property */
-      }
-
-      .link-card h2 {
-        margin-top: 0;
-      }
-
-      .link-card p {
-        margin: 10px 0 0;
-      }
-
-      .link-card i.icon {
-        font-size: 2em;
-        margin-bottom: 10px;
-        display: block;
-      }
-      .skills {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        text-align: start;
-      }
-      .link-card img {
-        font-size: 2em;
-        margin-left: -30px;
-        margin-top: -30px;
-        margin-bottom: -30px;
-        width: 200px;
-        /* Set the maximum width of the images */
-      }
-      .linkdiv {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .dropdown {
-        position: relative;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #68b0ab;
-        max-width: 110px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content li {
-        padding: 10px;
-        display: block;
-        width: 100%;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown-content > li:hover a {
-        color: #fff;
-      }
-    </style>
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="port">
         <div id="logo">
           <a href="index.html"
             ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
@@ -205,10 +56,10 @@
         <a href="./achievement.html">Achievement</a>
       </div>
 
-      <div class="image-box">
+      <div class="simage-box">
         <h1>Crafting Competence: My Skills Portfolio</h1>
         <div class="linkdiv">
-          <div class="link-card faq-card">
+          <div class="slink-card faq-card">
             <img src="./assets/skill1.jpg" alt="skill image" />
             <div class="skills">
               <h2>Accounting and Financial Management</h2>
@@ -220,7 +71,7 @@
             </div>
           </div>
 
-          <div class="link-card faq-card">
+          <div class="slink-card faq-card">
             <img src="./assets/skill2.jpg" alt="skill image" />
             <div class="skills">
               <h2>Sales and Customer Service</h2>
@@ -231,7 +82,7 @@
               </p>
             </div>
           </div>
-          <div class="link-card faq-card">
+          <div class="slink-card faq-card">
             <img src="./assets/skill3.jpg" alt="skill image" />
             <div class="skills">
               <h2>Team Leadership and Management</h2>
@@ -243,7 +94,7 @@
             </div>
           </div>
 
-          <div class="link-card faq-card">
+          <div class="slink-card faq-card">
             <img src="./assets/skill4.jpg" alt="skill image" />
             <div class="skills">
               <h2>Problem Solving and Decision Making</h2>
@@ -254,7 +105,7 @@
               </p>
             </div>
           </div>
-          <div class="link-card faq-card">
+          <div class="slink-card faq-card">
             <img src="./assets/skill6.jpg" alt="skill image" />
             <div class="skills">
               <h2>HTML and CSS Web Development</h2>
