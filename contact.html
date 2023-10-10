@@ -1,133 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chimi's Den</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="about.html">About Me</a>
-            <!-- Add dropdown content -->
-            <ul class="dropdown-content">
-              <li><a href="about.html">Myself</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="blog.html" >Blog</a>
-            <ul class="dropdown-content">
-              <li><a href="blog.html">My Blogs</a></li>
-              <li><a href="gratitude.html">Gratitude</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chimi's Den</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
 
-    <main>
-      <section id="contact">
-        <div class="contact-image">
-          <img src="./assets/contact_img.png" alt="Contact Image" />
-        </div>
-        <div class="contact-form">
-          <h1>Get in Touch!</h1>
-          <p>
-            Have questions, suggestions, or just want to say hello? I would love
-            to hear from you! Fill out the form below and I'll get back to you
-            as soon as possible. Feel free to reach out!
-          </p>
-          <form id="contactForm">
-            <input
-              type="text"
-              id="name"
-              placeholder="Name"
-              name="name"
-              required
-            /><br />
-            <input
-              type="email"
-              id="email"
-              placeholder="Email"
-              name="email"
-              required
-            /><br />
-            <textarea
-              id="message"
-              placeholder="Message"
-              name="message"
-              required
-            ></textarea
-            ><br />
-            <button type="submit">Submit</button>
-          </form>
-          <div id="errorMessage" style="color: red"></div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:your-email@gmail.com" target="_blank"
-          ><i class="fas fa-envelope"></i
-        ></a>
+<body>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
       </div>
-      <p>Chimi Denkar @2023</p>
-    </footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About Me</a>
+          <!-- Add dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="about.html">Myself</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <ul class="dropdown-content">
+            <li><a href="blog.html">My Blogs</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var message = document.getElementById("message").value;
-          var errorMessage = document.getElementById("errorMessage");
+  <main>
+    <section id="contact">
+      <div class="contact-image">
+        <img src="./assets/contact_img.png" alt="Contact Image" />
+      </div>
+      <div class="contact-form">
+        <h1>Get in Touch!</h1>
+        <p>
+          Have questions, suggestions, or just want to say hello? I would love
+          to hear from you! Fill out the form below and I'll get back to you
+          as soon as possible. Feel free to reach out!
+        </p>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Name" name="name" required /><br />
+          <input type="email" id="email" placeholder="Email" name="email" required /><br />
+          <textarea id="message" placeholder="Message" name="message" required></textarea><br />
+          <button type="submit">Submit</button>
+        </form>
+        <div id="errorMessage" style="color: red"></div>
+      </div>
+    </section>
+  </main>
 
-          if (!name || !email || !message) {
-            errorMessage.textContent = "All fields are required.";
-            return;
-          }
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Chimi Denkar @2023</p>
+  </footer>
 
-          errorMessage.textContent = "";
+  <script>
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var errorMessage = document.getElementById("errorMessage");
 
-          // At this point, the form is valid. You can send the data using a service like Formspree.
-          // You'll need to set up your Formspree endpoint in the 'action' attribute of the form.
+        if (!name || !email || !message) {
+          errorMessage.textContent = "All fields are required.";
+          return;
+        }
 
-          document.getElementById("contactForm").reset(); // Reset the form after submission
-        });
-    </script>
-  </body>
+        errorMessage.textContent = "";
+
+        // At this point, the form is valid. You can send the data using a service like Formspree.
+        // You'll need to set up your Formspree endpoint in the 'action' attribute of the form.
+
+        document.getElementById("contactForm").reset();
+        alert("Thank you for reaching out! We've received your message and will get back to you shortly.");
+
+        document.getElementById("contactForm").reset();
+      });
+  </script>
+</body>
+
 </html>
