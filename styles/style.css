@@ -53,6 +53,25 @@ header nav ul li a:hover {
   color: #fff;
   transition: ease-in-out 0.3s;
 }
+
+.menu-toggle {
+  display: none; /* Hide it by default. Show only on mobile view */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; /* Adjust this to properly position the button */
+  right: 10px; /* Adjust this to properly position the button */
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #1e1e1e;
+  margin: 2px 0; /* Space out the bars a bit */
+}
 .active {
   color: #fff;
   text-decoration: underline;
@@ -93,12 +112,13 @@ footer {
   text-align: center;
   background-color: #1e1e1e;
   width: 100%;
-  bottom: 0;
   height: 100px;
-  position: relative;
-  flex-shrink: 0; /* Prevent footer from shrinking */
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
-
 footer #social-icons i {
   color: #fff;
   margin: 0px 7px;
@@ -123,9 +143,11 @@ footer a {
   padding-left: 5vw;
 }
 
+.heroImage {
+  position: relative;
+}
+
 .Highlights {
-  height: 600px;
-  width: 100%;
   background-color: #68b0ab;
   text-align: center;
   display: flex;
@@ -134,6 +156,7 @@ footer a {
   align-items: center;
   font-size: x-large;
   font-weight: 600;
+  padding: 20px;
 }
 
 .Lights {
@@ -141,6 +164,8 @@ footer a {
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .Light {
@@ -151,10 +176,12 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: end;
+  box-sizing: border-box; /* Include padding and border in the item's total width and height */
+  margin-bottom: 20px; /* Set a bottom margin for spacing */
 }
 
 .Light p {
-  color: #fff;
+  color: white;
   font-size: 20px;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.5);
@@ -164,6 +191,8 @@ footer a {
   justify-content: center;
   align-items: center;
   transition: ease-in-out 0.3s;
+  padding: 0 10px; /* Added padding for better spacing on smaller screens */
+  box-sizing: border-box; /* Include padding in the item's total width and height */
 }
 
 .Light p:hover {
@@ -171,12 +200,11 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 400px;
 }
-
 .parallax {
   min-height: 500px;
   background-image: url("../assets/lake.jpeg");
@@ -217,12 +245,11 @@ footer a {
 
 .Upcoming-Events {
   text-align: center;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
   align-items: center;
+  padding-bottom: 100px; /* Adjusted for consistent spacing */
 }
 
 .Upcoming-Events > h1 {
@@ -240,15 +267,24 @@ footer a {
   font-family: "Inconsolata", monospace;
   font-size: 22px;
 }
+.Head-Content p {
+  width: 30vw;
+  text-align: left;
+}
+.Head-Content-buttons {
+  display: flex;
+  gap: 20px;
+}
 .Head-Content > h1 {
-  text-shadow:5px 5px 9px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4);
 }
 
 .Event-Collection {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 75px;
+  gap: 50px; /* Adjusted gap value for better spacing */
+  padding: 0 100px;
 }
 
 .Event-Tab {
@@ -257,11 +293,11 @@ footer a {
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem; /* Adjusted margin for consistent spacing */
   box-sizing: content-box;
   border-radius: 10px;
-  height: 300px;
-  width: 400px;
+  height: auto; /* Changed from fixed height to auto for flexibility */
+  width: 80%; /* Adjusted width for wider viewports */
   text-align: left;
   background-color: #68b0ab;
   color: aliceblue;
@@ -344,18 +380,26 @@ footer a {
 
 #links {
   display: flex;
+  flex-direction: wrap;
   justify-content: center;
   margin-top: 20px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%;
   padding: 0 10px;
+}
+
+#aboutLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .link-card {
   background-color: #efeff3;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 25%;
+  width: 250px;
   padding: 20px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Updated transition for smoother effect */
@@ -505,7 +549,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../assets/gratitude.jpeg);
+  background: url("../assets/gratitude.jpeg");
   background-size: cover;
   background-position: center;
   transition: ease-in-out 0.5s;
@@ -513,7 +557,7 @@ footer a {
 .gratitude > p {
   font-size: 6rem;
   font-weight: bold;
-  color: #faf3dd;
+  color: #000000;
 }
 .gratitude:hover {
   opacity: 0.9;
@@ -539,39 +583,43 @@ footer a {
   color: black;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .row {
   display: flex;
-  flex-direction: row;
-  margin-left: 15rem;
-  margin-bottom: 4rem;
-  column-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 80vw;
+  column-gap: 15px;
+  margin: 0 auto;
+  padding: 0;
 }
+
 .one {
-  /* margin-left: 4rem; */
-  width: 20rem;
+  width: 300px;
+  margin: 0 1rem 2rem 0;
   background-color: #68b0ab;
   color: #f1f1f1;
-  /* Background color for the card */
   padding: 1rem;
-  /* Padding around the card content */
-
   border-radius: 8px;
-
-  /* Rounded corners for the card */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Box shadow for the card */
 }
 
 .one > img {
-  height: 15rem;
-  width: 20rem;
-  border-radius: 12px 12px 0 0;
+  width: 300px;
+  height: 230px;
+  border-radius: 8px 8px 0 0;
   object-fit: cover;
-  background-position: center;
 }
+
 .one > p {
   font-weight: 100;
 }
+
 .blogs {
   text-align: center;
   margin-top: 50px;
@@ -703,12 +751,16 @@ footer a {
   transform: scale(1.1);
 }
 
+#errorMessage {
+  margin-top: 10px;
+}
 
 /* downloads */
 
 .Dcontainer {
   max-width: 800px;
-  height: 60vh;
+  width: 80vw;
+  min-height: 60vh;
   margin: 0 auto 100px auto;
   padding: 20px;
   background-color: #fff;
@@ -754,16 +806,16 @@ footer a {
 .contact {
   color: #68b0ab;
 }
-.contact:hover{
+.contact:hover {
   color: #1e1e1e;
 }
 .Feature-Downloads-Section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .Feature-Downloads-Section li {
-  width: 30%;
+  width: 300px;
   border: 1px solid #68b0ab;
   border-radius: 5px;
   padding: 10px;
@@ -773,7 +825,7 @@ footer a {
   align-items: center;
   transition: ease-in-out 0.3s;
 }
-.Feature-Downloads-Section li:hover{
+.Feature-Downloads-Section li:hover {
   background-color: #fff3dd;
 }
 
@@ -785,6 +837,7 @@ footer a {
 /* Gratitude */
 .gcontainer {
   max-width: 800px;
+  width: 80vw;
   margin: 0 auto 50px auto;
   padding: 20px;
   background-color: white;
@@ -811,10 +864,11 @@ ul {
 }
 .container {
   display: flex;
-  align-items: center;
+  /* align-items: center;
+  justify-content: center; */
   min-height: 80vh;
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
   box-sizing: border-box;
   padding-left: 20vw;
 }
@@ -978,6 +1032,15 @@ ul {
   height: 600px;
   justify-content: center;
 }
+@media screen and (max-width: 1024px) {
+  .ccontainer {
+    flex-direction: column;
+    height: auto;
+  }
+  .ccontainer > .careerhead {
+    display: none;
+  }
+}
 .ccontainer strong {
   font-size: 1.5rem;
   font-weight: 800;
@@ -1022,6 +1085,11 @@ ul {
 
 .acimage-box {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 100px 50px;
   margin: 0 auto;
 }
@@ -1061,6 +1129,13 @@ ul {
   margin: 10px 0 0;
 }
 
+.aclink-card i.icon,
+.aclink-card p,
+.aclink-card h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  display: none;
+}
 
 /* Experience */
 .experience-img {
@@ -1071,11 +1146,20 @@ ul {
   border-radius: 0 10px 10px 0;
 }
 .education-img {
+  display: block;
   width: 45vw;
   background: url(../assets/travels3.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 10px 0px 0px 10px;
+}
+@media screen and (max-width: 1024px) {
+  .experience-img {
+    display: none;
+  }
+  .education-img {
+    display: none;
+  }
 }
 
 .experience-section {
@@ -1181,6 +1265,21 @@ ul {
 .himage-box {
   text-align: center;
   padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hlinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  /* margin-left: 8vw; */
+  margin: 0 auto;
 }
 
 .himage-box img {
@@ -1192,7 +1291,7 @@ ul {
   background-color: #efeff3;
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: 100%;
+  width: 80%;
   padding: 80px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;

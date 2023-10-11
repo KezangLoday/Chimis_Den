@@ -1,145 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chimi's Den</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li class="dropdown">
-            <a href="about.html">About Me</a>
-            <!-- Add dropdown content -->
-            <ul class="dropdown-content">
-              <li><a href="about.html">Myself</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="blog.html" >Blog</a>
-            <ul class="dropdown-content">
-              <li><a href="blog.html">My Blogs</a></li>
-              <li><a href="gratitude.html">Gratitude</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Header Section Starts From Here -->
-    <div class="Hero-Section">
-      <div class="Head-Content" style="text-align: left">
-        <h1>WELCOME TO MY DEN!</h1>
-        <p style="width: 30vw; text-align: left">
-          Hello Guys, It's me, Chimi Denkar who loves food, travel, adventures
-          and unveiling untold stories. Stay tuned for the jam.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chimi's Den</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/navstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
+      </div>
+      <div class="menu-toggle"> <!-- Hamburger button -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About Me</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="about.html">Myself</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="blog.html">My Blogs</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header Section Starts From Here -->
+  <div class="Hero-Section">
+    <div class="Head-Content">
+      <h1>WELCOME TO MY DEN!</h1>
+      <p>
+        Hello Guys, It's me, Chimi Denkar who loves food, travel, adventures
+        and unveiling untold stories. Stay tuned for the jam.
+      </p>
+      <div class="Head-Content-buttons">
+        <button class="Xp" onclick="window.location='/experience.html'">
+          Experience
+        </button>
+        <button class="LinkIn">LinkedIn</button>
+      </div>
+    </div>
+    <div class="heroImage">
+      <img src="./assets/Hero.png" />
+    </div>
+  </div>
+  <!-- Header Section Ends Here -->
+
+  <!-- Highlights of the Year -->
+  <div class="Highlights">
+    <h1>Highlights of the Year</h1>
+    <div class="Lights">
+      <div class="Light" style="background: url(./assets/hike.png); background-repeat:no-repeat">
+        <p>Chimmi's Den at Hike</p>
+      </div>
+      <div class="Light" style="background: url(./assets/sun_rise.png);background-repeat:no-repeat">
+        <p>Chimmi's Den and Sunrise</p>
+      </div>
+      <div class="Light" style="background: url(./assets/city.png);background-repeat:no-repeat">
+        <p>Chimmi's Den and The City</p>
+      </div>
+    </div>
+  </div>
+  <!-- End of Highlights of the Year -->
+
+  <!-- Start Parallax -->
+  <div class="parallax">
+    <h1>The Tale at the Boat</h1>
+    <button>Learn More</button>
+  </div>
+  <!-- End of Parallax -->
+
+  <!-- Start of Upcoming Events -->
+  <div class="Upcoming-Events">
+    <h1>Upcoming Events</h1>
+    <div class="Event-Collection">
+      <div class="Event-Tab">
+        <h1>Web Development Workshop</h1>
+        <p>
+          Date: October 21, 2023<br /><br />
+          Location: Tech Hub, 123 Canberra Ave, Canberra<br /><br />
+          Details: Join us for a hands-on workshop on modern web development
+          practices. Learn how to build responsive and interactive websites
+          using the latest frameworks and libraries. Whether you're a beginner
+          or an experienced developer, this workshop offers valuable insights
+          and networking opportunities.
         </p>
-        <div style="display: flex; gap: 20px">
-          <button class="Xp" onclick="window.location='/experience.html'">
-            Experience
-          </button>
-          <button class="LinkIn">LinkedIn</button>
-        </div>
       </div>
-      <div style="position: relative">
-        <img src="./assets/Hero.png" />
-      </div>
-    </div>
-    <!-- Header Section Ends Here -->
-
-    <!-- Highlights of the Year -->
-    <div class="Highlights">
-      <h1>Highlights of the Year</h1>
-      <div class="Lights">
-        <div class="Light" style="background: url(./assets/hike.png)">
-          <p>Chimmi's Den at Hike</p>
-        </div>
-        <div class="Light" style="background: url(./assets/sun_rise.png)">
-          <p>Chimmi's Den and Sunrise</p>
-        </div>
-        <div class="Light" style="background: url(./assets/city.png)">
-          <p>Chimmi's Den and The City</p>
-        </div>
+      <div class="Event-Tab">
+        <h1>Cultural Exchange Fair</h1>
+        <p>
+          Date: November 10, 2023<br /><br />
+          Location: Community Center, 456 Parliament Dr, Canberra<br /><br />
+          Details: Explore diverse cultures, traditions, and cuisines at our
+          annual Cultural Exchange Fair. The event features cultural booths,
+          traditional performances, and a variety of international dishes to
+          sample. It's a fantastic opportunity to broaden your horizons and
+          meet individuals from different backgrounds.
+        </p>
       </div>
     </div>
-    <!-- End of Highlights of the Year -->
+  </div>
+  </div>
 
-    <!-- Start Parallax -->
-    <div class="parallax">
-      <h1>The Tale at the Boat</h1>
-      <button>Learn More</button>
+  <!-- End of Upcoming Events -->
+
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
-    <!-- End of Parallax -->
+    <p>Chimi Denkar @2023</p>
+  </footer>
 
-    <!-- Start of Upcoming Events -->
-    <div class="Upcoming-Events">
-      <h1>Upcoming Events</h1>
-      <div class="Event-Collection">
-        <div class="Event-Tab">
-          <h1>Web Development Workshop</h1>
-          <p>
-            Date: October 21, 2023<br /><br />
-            Location: Tech Hub, 123 Canberra Ave, Canberra<br /><br />
-            Details: Join us for a hands-on workshop on modern web development
-            practices. Learn how to build responsive and interactive websites
-            using the latest frameworks and libraries. Whether you're a beginner
-            or an experienced developer, this workshop offers valuable insights
-            and networking opportunities.
-          </p>
-        </div>
-        <div class="Event-Tab">
-          <h1>Cultural Exchange Fair</h1>
-          <p>
-            Date: November 10, 2023<br /><br />
-            Location: Community Center, 456 Parliament Dr, Canberra<br /><br />
-            Details: Explore diverse cultures, traditions, and cuisines at our
-            annual Cultural Exchange Fair. The event features cultural booths,
-            traditional performances, and a variety of international dishes to
-            sample. It's a fantastic opportunity to broaden your horizons and
-            meet individuals from different backgrounds.
-          </p>
-        </div>
-      </div>
-    </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('header nav ul');
 
-    <!-- End of Upcoming Events -->
+      menuToggle.addEventListener('click', function () {
+        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+          navMenu.style.display = 'block';
+        } else {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
 
-    <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:your-email@gmail.com" target="_blank"
-          ><i class="fas fa-envelope"></i
-        ></a>
-      </div>
-      <p>Chimi Denkar @2023</p>
-    </footer>
-  </body>
+  </script>
+</body>
+
 </html>

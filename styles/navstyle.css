@@ -1,0 +1,264 @@
+/* Media Queries */
+
+/* Tablet view */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Navbar adjustments */
+  header nav #logo img {
+    height: 45px;
+    padding-left: 30px;
+  }
+  header nav ul li a {
+    font-size: medium;
+  }
+  /* footer */
+  footer #social-icons i {
+    font-size: 20px;
+    margin: 0px 5px;
+  }
+
+  /* Index page adjustments */
+  .Hero-Section {
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 2vw;
+    padding-right: 2vw; */
+  }
+
+  .heroImage > img {
+    display: none;
+  }
+  .Highlights,
+  .Upcoming-Events {
+    font-size: large;
+  }
+  .Lights {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Light {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .parallax h1 {
+    font-size: 3rem;
+  }
+  .Upcoming-Events {
+    margin-top: -400px;
+    margin-bottom: 50px;
+  }
+  .Event-Collection {
+    flex-direction: column;
+    gap: 30px; /* Reduced gap for tablet view */
+  }
+
+  .Event-Tab {
+    width: 90%; /* Increased width for tablet view */
+    margin-bottom: 1.5rem; /* Adjusted margin for tablet view */
+  }
+  .Upcoming-Events > h1,
+  .Head-Content {
+    font-size: 1.75rem;
+  }
+  .Light {
+    width: calc(
+      50% - 20px
+    ); /* Elements will take up half the width minus the gap */
+  }
+  .Light p {
+    font-size: 18px; /* Slightly reduced font size */
+  }
+  .parallax h1 {
+    font-size: 3rem;
+  }
+
+  .Upcoming-Events > h1 {
+    font-size: 2.5rem;
+  }
+
+  .Event-Collection {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Event-Tab {
+    width: 70%;
+    height: auto; /* adjust as needed */
+  }
+
+  .Head-Content p {
+    width: 70vw; /* Adjusted for tablet width */
+  }
+
+  .Head-Content > h1 {
+    font-size: 2rem;
+  }
+  .parallax h1 {
+    font-size: 2.5rem; /* Adjust font size for tablet */
+  }
+
+  .Upcoming-Events > h1 {
+    font-size: 2rem; /* Adjust font size for tablet */
+    margin-top: 500px;
+  }
+
+  /*Portfolio */
+  .image-box-image {
+    display: none;
+  }
+  /*contact*/
+  .contact-image {
+    display: none;
+  }
+}
+
+/* Phone view */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  .heroImage > img {
+    display: none;
+  }
+  header nav #logo img {
+    height: 40px;
+    padding-left: 20px;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20px;
+    display: none; /* Hide by default and toggle display via JavaScript */
+  }
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+  /* footer */
+  footer #social-icons i {
+    font-size: 18px;
+    margin: 0px 3px;
+  }
+
+  footer p {
+    font-size: x-small;
+  }
+  /* For a simple toggle button */
+  .menu-toggle {
+    display: block;
+    background: #68b0ab;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  /* Index page adjustments */
+  .Hero-Section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+    height: 50px;
+  }
+  .heroImage {
+    display: none;
+  }
+  .Head-Content,
+  .Upcoming-Events > h1 {
+    font-size: 1.5rem;
+  }
+  .Head-Content p {
+    width: 85vw;
+  }
+  .Light {
+    width: 90%;
+  }
+
+  .parallax h1 {
+    font-size: 2.5rem;
+  }
+  .Upcoming-Events {
+    margin-top: -400px;
+    margin-bottom: 50px;
+  }
+  .Highlights,
+  .Upcoming-Events {
+    font-size: medium;
+  }
+  .Highlights {
+    font-size: large; /* Reduce font size */
+  }
+  .Light {
+    width: 100%; /* Elements will take up full width */
+  }
+  .parallax h1 {
+    font-size: 2rem;
+  }
+  .Event-Collection {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Event-Tab {
+    width: 95%; /* Increased width for mobile view */
+    margin-bottom: 1rem; /* Adjusted margin for mobile view */
+    padding: 5px; /* Reduced padding for mobile view */
+  }
+
+  .Upcoming-Events > h1 {
+    font-size: 2rem;
+  }
+
+  .Event-Collection {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Event-Tab {
+    width: 90%;
+    height: auto; /* adjust as needed */
+    margin-bottom: 2rem; /* reduce the bottom margin for mobile */
+  }
+
+  .Head-Content p {
+    width: 85vw; /* Adjusted for mobile width */
+  }
+
+  .Head-Content > h1 {
+    font-size: 1.75rem;
+  }
+  .parallax h1 {
+    font-size: 2.5rem; /* Adjust font size for tablet */
+  }
+
+  .Upcoming-Events > h1 {
+    font-size: 2rem; /* Adjust font size for tablet */
+    margin-top: 500px;
+  }
+
+  /*Portfolio*/
+
+  .image-box-image {
+    display: none;
+  }
+  /*Hobbies*/
+  .hiamge {
+    flex-direction: row;
+  }
+  /*Achievements*/
+  #links {
+    flex-direction: column;
+  }
+
+  /*contact*/
+  .contact-image {
+    display: none;
+  }
+
+  /*Downloads*/
+  .Feature-Downloads-Section {
+    flex-direction: column;
+  }
+}
