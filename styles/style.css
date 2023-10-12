@@ -549,10 +549,10 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../assets/gratitude.jpeg");
+  /* background: url("../assets/gratitude.jpeg"); */
   background-size: cover;
   background-position: center;
-  transition: ease-in-out 0.5s;
+  /* transition: ease-in-out 0.5s; */
 }
 .gratitude > p {
   font-size: 6rem;
@@ -579,8 +579,8 @@ footer a {
 
 .gratitude > button:hover {
   border-color: #fff;
-  background-color: #afafaf;
-  color: black;
+  background-color: #000;
+  color: #fff;
 }
 
 body {
@@ -622,7 +622,7 @@ body {
 
 .blogs {
   text-align: center;
-  margin-top: 50px;
+  margin-top: -28px;
   font-size: 3rem;
 }
 
@@ -881,6 +881,7 @@ ul {
   background-color: #68b0ab;
 }
 .side-bar {
+  min-width: 300px;
   width: 25vw;
   height: 100vh;
   position: fixed;
@@ -905,6 +906,22 @@ ul {
   padding: 10px;
   border-radius: 10px;
   transition: ease-in-out 0.3s;
+}
+/* Sidebar Toggle Button */
+.sidebar-toggle-btn {
+  display: none;
+  position: fixed;
+  top: 20vh;
+  /*left: 10px; */
+  background-color: #68b0ab;
+  border: none;
+  color: #faf3dd;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  z-index: 3000;
+  cursor: pointer;
+  height: 10vh;
 }
 
 .pimage-box {
@@ -1113,13 +1130,12 @@ ul {
   margin: 1% 2%;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
-.aclink-card:hover {
-  transform: scale(1.05); /* Updated transform property */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow property */
-}
+/* .aclink-card:hover {
+  transform: scale(1.05); /* Updated transform property 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  Updated box-shadow property 
+} */
 
 .aclink-card h2 {
   margin-top: 0;

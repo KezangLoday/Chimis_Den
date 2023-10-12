@@ -1,4 +1,6 @@
 /* Media Queries */
+@media (min-width: 1210px) {
+}
 
 /* Tablet view */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -107,6 +109,17 @@
   }
   /*contact*/
   .contact-image {
+    display: none;
+  }
+
+  /*sidebar */
+  .side-bar {
+    display: flex;
+  }
+  .sidebar-toggle-btn {
+    display: block;
+  }
+  #sidebar-toggle {
     display: none;
   }
 }
@@ -260,5 +273,11 @@
   /*Downloads*/
   .Feature-Downloads-Section {
     flex-direction: column;
+  }
+  .side-bar {
+    display: none;
+  }
+  .sidebar-toggle-btn {
+    display: block;
   }
 }
