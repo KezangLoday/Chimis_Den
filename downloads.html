@@ -1,115 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chimi's Den</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navstyle.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="about.html">About Me</a>
-            <!-- Add dropdown content -->
-            <ul class="dropdown-content">
-              <li><a href="about.html">Myself</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="blog.html">Blog</a>
-            <ul class="dropdown-content">
-              <li><a href="blog.html">My Blogs</a></li>
-              <li><a href="gratitude.html">Gratitude</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="downloads.html" class="active">Downloads</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chimi's Den</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/navstyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
 
-    <h1 class="downloads">Downloads</h1>
-    <div class="Dcontainer">
-      <h2>Welcome to my Download Page</h2>
-      <p>
-        On this page, you can find and download various resources, files, and
-        materials related to my blog content. We hope you find them useful!
-      </p>
-
-      <h2>Featured Downloads</h2>
-      <ul class="Feature-Downloads-Section">
-        <li>
-          <i class="far fa-file-alt icon"></i
-          ><a href="#">Curriculum Vitae(PDF)</a>
-        </li>
-        <li>
-          <i class="fas fa-heart icon"></i
-          ><a href="#">Gratitude(PDF)</a>
-        </li>
-        <li>
-          <i class="fas fa-leaf icon"></i
-          ><a href="#">Ways to Life (PDF)</a>
-        </li>
-      </ul>
-      <ul class="Feature-Downloads-Section">
-        <li>
-          <i class="fas fa-images icon"></i
-          ><a href="#">Wallpapers(PNG)</a>
-        </li>
-        <li>
-          <i class="fas fa-palette icon"></i
-          ><a href="#">Printable Art(PNG)</a>
-        </li>
-        <li>
-          <i class="fas fa-video icon"></i
-          ><a href="#">Video Tutorials(MP4)</a>
-        </li>
-      </ul>
-
-      <h2>Additional Information</h2>
-      <p>
-        If you're looking for specific resources or have any questions about my
-        downloads, please feel free to
-        <a class="contact" href="./contact.html">contact me</a>. I'm here to
-        assist you!
-      </p>
-    </div>
-    <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:your-email@gmail.com" target="_blank"
-          ><i class="fas fa-envelope"></i
-        ></a>
+<body>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
       </div>
-      <p>Chimi Denkar @2023</p>
-    </footer>
-  </body>
+      <div class="menu-toggle"> <!-- Hamburger button -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About Me</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="about.html">Myself</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="blog.html">My Blogs</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="downloads">Downloads</h1>
+  <div class="Dcontainer">
+    <h2>Welcome to my Download Page</h2>
+    <p>
+      On this page, you can find and download various resources, files, and
+      materials related to my blog content. We hope you find them useful!
+    </p>
+
+    <h2>Featured Downloads</h2>
+    <ul class="Feature-Downloads-Section">
+      <li>
+        <i class="far fa-file-alt icon"></i><a href="#">Curriculum Vitae(PDF)</a>
+      </li>
+      <li>
+        <i class="fas fa-heart icon"></i><a href="#">Gratitude(PDF)</a>
+      </li>
+      <li>
+        <i class="fas fa-leaf icon"></i><a href="#">Ways to Life (PDF)</a>
+      </li>
+    </ul>
+    <ul class="Feature-Downloads-Section">
+      <li>
+        <i class="fas fa-images icon"></i><a href="#">Wallpapers(PNG)</a>
+      </li>
+      <li>
+        <i class="fas fa-palette icon"></i><a href="#">Printable Art(PNG)</a>
+      </li>
+      <li>
+        <i class="fas fa-video icon"></i><a href="#">Video Tutorials(MP4)</a>
+      </li>
+    </ul>
+
+    <h2>Additional Information</h2>
+    <p>
+      If you're looking for specific resources or have any questions about my
+      downloads, please feel free to
+      <a class="contact" href="./contact.html">contact me</a>. I'm here to
+      assist you!
+    </p>
+  </div>
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Chimi Denkar @2023</p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('header nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+          navMenu.style.display = 'block';
+        } else {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
+
+  </script>
+</body>
+
 </html>

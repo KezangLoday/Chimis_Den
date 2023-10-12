@@ -1,148 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonials | Chimi's Den</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navstyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="about.html" class="active">About Me</a>
-            <ul class="dropdown-content">
-              <li><a href="about.html">Myself</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="blog.html">Blog</a>
-            <ul class="dropdown-content">
-              <li><a href="blog.html">My Blogs</a></li>
-              <li><a href="gratitude.html">Gratitude</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="main-content">
-      <!-- Testimonials Section -->
-      <div id="testimonial-section">
-        <h1>What People Say</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | Chimi's Den</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/navstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
 
-        <div class="testimonial active">
-          <img
-            src="./assets/testimonial2.jpg"
-            alt="John Doe"
-            class="testimonial-image"
-          />
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              "Chimi's creativity and attention to detail is unparalleled. The
-              website design exceeded our expectations."
-            </p>
-            <p class="testimonial-author">- John Doe</p>
-          </div>
-        </div>
+<body>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
+      </div>
+      <div class="menu-toggle"> <!-- Hamburger button -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About Me</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="about.html">Myself</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="blog.html">My Blogs</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="main-content">
+    <!-- Testimonials Section -->
+    <div id="testimonial-section">
+      <h1>What People Say</h1>
 
-        <div class="testimonial">
-          <img
-            src="./assets/testimonial1.jpg"
-            alt="Jane Smith"
-            class="testimonial-image"
-          />
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              "Working with Chimi was a delight. The project was completed on
-              time and the communication was flawless."
-            </p>
-            <p class="testimonial-author">- Jane Smith</p>
-          </div>
+      <div class="testimonial active">
+        <img src="./assets/testimonial2.jpg" alt="John Doe" class="testimonial-image" />
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Chimi's creativity and attention to detail is unparalleled. The
+            website design exceeded our expectations."
+          </p>
+          <p class="testimonial-author">- John Doe</p>
         </div>
-        <div class="testimonial">
-          <img
-            src="./assets/testimonial3.jpg"
-            alt="Alex Johnson"
-            class="testimonial-image"
-          />
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              "The experience was seamless. Chimi's expertise in web development
-              really shone through in the final product."
-            </p>
-            <p class="testimonial-author">- Alex Johnson</p>
-          </div>
-        </div>
+      </div>
 
-        <div id="testimonial-controls">
-          <button class="testimonial-button" onclick="prevTestimonial()">
-            Previous
-          </button>
-          <button class="testimonial-button" onclick="nextTestimonial()">
-            Next
-          </button>
+      <div class="testimonial">
+        <img src="./assets/testimonial1.jpg" alt="Jane Smith" class="testimonial-image" />
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Working with Chimi was a delight. The project was completed on
+            time and the communication was flawless."
+          </p>
+          <p class="testimonial-author">- Jane Smith</p>
         </div>
+      </div>
+      <div class="testimonial">
+        <img src="./assets/testimonial3.jpg" alt="Alex Johnson" class="testimonial-image" />
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "The experience was seamless. Chimi's expertise in web development
+            really shone through in the final product."
+          </p>
+          <p class="testimonial-author">- Alex Johnson</p>
+        </div>
+      </div>
+
+      <div id="testimonial-controls">
+        <button class="testimonial-button" onclick="prevTestimonial()">
+          Previous
+        </button>
+        <button class="testimonial-button" onclick="nextTestimonial()">
+          Next
+        </button>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:your-email@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i
-        ></a>
-      </div>
-      <p>Chimi Denkar @2023</p>
-    </footer>
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:your-email@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Chimi Denkar @2023</p>
+  </footer>
 
-    <script>
-      var currentTestimonialIndex = 0;
-      var testimonials = document.querySelectorAll(".testimonial");
+  <script>
+    var currentTestimonialIndex = 0;
+    var testimonials = document.querySelectorAll(".testimonial");
 
-      function showTestimonial(index) {
-        testimonials.forEach(function (testimonial, i) {
-          testimonial.classList.toggle("active", i === index);
-        });
-      }
+    function showTestimonial(index) {
+      testimonials.forEach(function (testimonial, i) {
+        testimonial.classList.toggle("active", i === index);
+      });
+    }
 
-      function prevTestimonial() {
-        currentTestimonialIndex =
-          (currentTestimonialIndex + testimonials.length - 1) %
-          testimonials.length;
-        showTestimonial(currentTestimonialIndex);
-      }
-
-      function nextTestimonial() {
-        currentTestimonialIndex =
-          (currentTestimonialIndex + 1) % testimonials.length;
-        showTestimonial(currentTestimonialIndex);
-      }
-
-      // Optionally, initialize the first testimonial as active
+    function prevTestimonial() {
+      currentTestimonialIndex =
+        (currentTestimonialIndex + testimonials.length - 1) %
+        testimonials.length;
       showTestimonial(currentTestimonialIndex);
-    </script>
-  </body>
+    }
+
+    function nextTestimonial() {
+      currentTestimonialIndex =
+        (currentTestimonialIndex + 1) % testimonials.length;
+      showTestimonial(currentTestimonialIndex);
+    }
+
+    // Optionally, initialize the first testimonial as active
+    showTestimonial(currentTestimonialIndex);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('header nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+          navMenu.style.display = 'block';
+        } else {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
 </html>

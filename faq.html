@@ -1,138 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chimi's Den</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navstyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="about.html" class="active">About Me</a>
-            <!-- Add dropdown content -->
-            <ul class="dropdown-content">
-              <li><a href="about.html">Myself</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="blog.html" >Blog</a>
-            <ul class="dropdown-content">
-              <li><a href="blog.html">My Blogs</a></li>
-              <li><a href="gratitude.html">Gratitude</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="main-content">
-      <div id="faq-section">
-        <h1>Frequently Asked Questions</h1>
-        <div class="faq-item" onclick="toggleFaqItem(this)">
-          <div class="faq-question">
-            What services do you offer?
-            <i class="arrow fas fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            We offer a variety of services including web design, graphic design,
-            and digital marketing.
-          </div>
-        </div>
-        <div class="faq-item" onclick="toggleFaqItem(this)">
-          <div class="faq-question">
-            How can I contact you?
-            <i class="arrow fas fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            You can contact us via email at contact@chimisden.com or by phone at
-            (123) 456-7890.
-          </div>
-        </div>
-        <div class="faq-item" onclick="toggleFaqItem(this)">
-          <div class="faq-question">
-            How can I schedule a consultation?
-            <i class="arrow fas fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            You can schedule a consultation by contacting us via email or phone.
-            Our contact information can be found on the Contact page.
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chimi's Den</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/navstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="faq-item" onclick="toggleFaqItem(this)">
-          <div class="faq-question">
-            Where are you located?
-            <i class="arrow fas fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            We are located at 123 Main Street, Canberra.
-          </div>
-        </div>
-        <div class="faq-item" onclick="toggleFaqItem(this)">
-          <div class="faq-question">
-            Do you offer remote services?
-            <i class="arrow fas fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            Yes, we offer remote services for clients who are unable to visit us
-            in person.
-          </div>
-        </div>
-        <!-- <div class="faq-item" onclick="toggleFaqItem(this)">
-          <div class="faq-question">
-            How long does it take to receive a response?
-            <i class="arrow fas fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            We aim to respond to all inquiries within 24 to 48 hours.
-          </div>
-        </div> -->
+<body>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
       </div>
+      <div class="menu-toggle"> <!-- Hamburger button -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About Me</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="about.html">Myself</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="blog.html">My Blogs</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="main-content">
+    <div id="faq-section">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-item" onclick="toggleFaqItem(this)">
+        <div class="faq-question">
+          What services do you offer?
+          <i class="arrow fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          We offer a variety of services including web design, graphic design,
+          and digital marketing.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaqItem(this)">
+        <div class="faq-question">
+          How can I contact you?
+          <i class="arrow fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          You can contact us via email at contact@chimisden.com or by phone at
+          (123) 456-7890.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaqItem(this)">
+        <div class="faq-question">
+          How can I schedule a consultation?
+          <i class="arrow fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          You can schedule a consultation by contacting us via email or phone.
+          Our contact information can be found on the Contact page.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaqItem(this)">
+        <div class="faq-question">
+          Where are you located?
+          <i class="arrow fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          We are located at 123 Main Street, Canberra.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaqItem(this)">
+        <div class="faq-question">
+          Do you offer remote services?
+          <i class="arrow fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Yes, we offer remote services for clients who are unable to visit us
+          in person.
+        </div>
+      </div>
+
     </div>
+  </div>
 
-    <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:your-email@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i
-        ></a>
-      </div>
-      <p>Chimi Denkar @2023</p>
-    </footer>
-    <script>
-      function toggleFaqItem(item) {
-        item.classList.toggle("open");
-      }
-    </script>
-  </body>
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:your-email@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Chimi Denkar @2023</p>
+  </footer>
+  <script>
+    function toggleFaqItem(item) {
+      item.classList.toggle("open");
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('header nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+          navMenu.style.display = 'block';
+        } else {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
 </html>

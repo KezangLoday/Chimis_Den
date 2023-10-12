@@ -1,114 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chimi's Den</title>
-    
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navstyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="index.html"
-            ><img src="./assets/chimis_den_logo.png" alt="Your Logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="about.html" class="active">About Me</a>
-            <!-- Add dropdown content -->
-            <ul class="dropdown-content">
-              <li><a href="about.html" >Myself</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="blog.html" >Blog</a>
-            <ul class="dropdown-content">
-              <li><a href="blog.html">My Blogs</a></li>
-              <li><a href="gratitude.html">Gratitude</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chimi's Den</title>
 
-    <div id="about-section">
-      <img src="./assets/about me pic.jpg" alt="Your Name" id="profile-pic" />
-      <div id="intro-card">
-        <h1>
-          Hello! I'm Chimi Denkar, a passionate blogger with a love for sharing
-          my experiences and learnings...
-        </h1>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/navstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html"><img src="./assets/chimis_den_logo.png" alt="Your Logo" /></a>
       </div>
-      <div id="detail">
-        <p>
-          A wanderlust-fueled individual currently mastering
-          the digital domain with a degree in Information Technology. When I'm
-          not immersed in code, you'll find me exploring the globe, savoring
-          diverse cuisines, and immersing in different cultures. My love for
-          music and movies runs deep, providing a rhythm to my adventures both
-          onscreen and off.<br /><br />
-          In this space, I share my travel tales, food escapades, musical
-          musings, movie reviews, and snippets from my academic journey in IT.
-          It's a blend of passions that make life an exhilarating journey.<br /><br />
-          Welcome to Chimi's Den, a canvas where each post is a voyage into the
-          experiences that shape my world. Join me as I navigate through the
-          realms of the tangible and digital, always with a tune in my heart and
-          an appetite for the unexplored.
-        </p>
+      <div class="menu-toggle"> <!-- Hamburger button -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-      <div id="aboutLinks">
-        <div class="link-card faq-card" onclick="location.href='faq.html'">
-          <i class="fas fa-question-circle icon"></i>
-          <h2>Frequently Asked Questions</h2>
-          <p>Have questions? Find answers to commonly asked questions here.</p>
-        </div>
-        <div
-          class="link-card testimonial-card"
-          onclick="location.href='testimonials.html'"
-        >
-          <i class="fas fa-comment-dots icon"></i>
-          <h2>Testimonials</h2>
-          <p>See what people are saying about my blog.</p>
-        </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About Me</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="about.html">Myself</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <!-- Dropdown content -->
+          <ul class="dropdown-content">
+            <li><a href="blog.html">My Blogs</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="about-section">
+    <img src="./assets/about me pic.jpg" alt="Your Name" id="profile-pic" />
+    <div id="intro-card">
+      <h1>
+        Hello! I'm Chimi Denkar, a passionate blogger with a love for sharing
+        my experiences and learnings...
+      </h1>
+    </div>
+    <div id="detail">
+      <p>
+        A wanderlust-fueled individual currently mastering
+        the digital domain with a degree in Information Technology. When I'm
+        not immersed in code, you'll find me exploring the globe, savoring
+        diverse cuisines, and immersing in different cultures. My love for
+        music and movies runs deep, providing a rhythm to my adventures both
+        onscreen and off.<br /><br />
+        In this space, I share my travel tales, food escapades, musical
+        musings, movie reviews, and snippets from my academic journey in IT.
+        It's a blend of passions that make life an exhilarating journey.<br /><br />
+        Welcome to Chimi's Den, a canvas where each post is a voyage into the
+        experiences that shape my world. Join me as I navigate through the
+        realms of the tangible and digital, always with a tune in my heart and
+        an appetite for the unexplored.
+      </p>
+    </div>
+    <div id="aboutLinks">
+      <div class="link-card faq-card" onclick="location.href='faq.html'">
+        <i class="fas fa-question-circle icon"></i>
+        <h2>Frequently Asked Questions</h2>
+        <p>Have questions? Find answers to commonly asked questions here.</p>
+      </div>
+      <div class="link-card testimonial-card" onclick="location.href='testimonials.html'">
+        <i class="fas fa-comment-dots icon"></i>
+        <h2>Testimonials</h2>
+        <p>See what people are saying about my blog.</p>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div id="social-icons">
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:your-email@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i
-        ></a>
-      </div>
-      <p>Chimi Denkar @2023</p>
-    </footer>
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:your-email@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Chimi Denkar @2023</p>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('header nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+          navMenu.style.display = 'block';
+        } else {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
+
+  </script>
+</body>
+
 </html>
